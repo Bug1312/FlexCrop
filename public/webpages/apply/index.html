@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FlexCrop Online</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="/webpages/shared/shared.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/data/images/other/favicon-stuff/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/data/images/other/favicon-stuff/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/data/images/other/favicon-stuff/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/data/images/other/favicon-stuff/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/data/images/other/favicon-stuff/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/data/images/other/favicon-stuff/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/data/images/other/favicon-stuff/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/data/images/other/favicon-stuff/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/data/images/other/favicon-stuff/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/data/images/other/favicon-stuff/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/data/images/other/favicon-stuff/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/data/images/other/favicon-stuff/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/data/images/other/favicon-stuff/favicon-16x16.png">
+    <link rel="manifest" href="/data/images/other/favicon-stuff/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/data/images/other/favicon-stuff/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FlexCrop Online" />
+    <meta property="og:description" content="Apply for FlexCrop today!" />
+    <meta property="og:image" content="/data/images/other/logoShort.png" />
+</head>
+
+<body onload="addJSON(['MenuPages']); window.location='https:\/\/docs.google.com/forms/d/e/1FAIpQLSdmEgt4Hp9IC0Nql1UoMHUAPBYgn7q8y4VM0NEbOdgzSdOXcQ/viewform?usp=sf_link'">
+    <nav>
+        <section class="nav-top">
+            <div class="menu-logo-search-cart">
+                <a class="hamburger-menu" mobile onclick="showOverlays(['.shadow-overlay','.menu-overlay'])">
+                    <span class="material-icons-round md-36 md-light">menu</span>
+                </a>
+                <img class="logo" src="/data/images/other/main_logo/logo.png" alt="logo" onclick="homePageRedirect(this)">
+            </div>
+        </section>
+        <section class="nav-mid">
+            <div class="menu-container menu" desktop></div>
+        </section>
+    </nav>
+    <main>
+        <section class="section-main"></section>
+        <section class="section-bottom">
+            <footer>
+                <a name="copyright">Copyright © 2021 Bug1312</a>
+                <a name="terms" href="/terms">Terms</a>
+                <a name="discord" href="https://discord.com/invite/vwwaxuvhT4">Discord</a>
+            </footer>
+        </section>
+    </main>
+    <overlay>
+        <div class="shadow-overlay" onclick="hideOverlays(['.shadow-overlay','.menu-overlay'])"></div>
+        <div class="menu-container menu-overlay" mobile>
+            <div class="mobile-menu-header">
+                <h3>FlexCrop Menu</h3>
+                <span class="material-icons-round" onclick="hideOverlays(['.shadow-overlay','.menu-overlay'])">clear</span>
+            </div>
+            <div class="mobile-menu-links"></div>
+        </div>
+    </overlay>
+</body>
+<script async src="//cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
+<script src="/webpages/shared/shared.js" type="text/javascript"></script>
+<link href="/webpages/apply/apply.css" rel="stylesheet">
+
+</html>

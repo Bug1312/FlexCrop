@@ -1,0 +1,51 @@
+EMPLOYEE: {                     -- empolyee_<<discord user ID>>
+    orders: NUMBER              -- Amount of overall orders
+    unpaid: NUMBER              -- Amount of needed payments
+    money: {                    -- Object grouping data involving money earned
+        overall: NUMBER         -- Amount of money gained overall
+        month: NUMBER           -- Amount of money gained current month
+        past_ten: NUMBER        -- Amount of money gained in the passed ten orders
+        month_pays: NUMBER      -- Amount of times reached 10 orders in the month
+    }
+    username: STRING            -- Their MC username
+    eotm: BOOLEAN               -- T/F of if they are employee of the month
+    dont_pay: BOOLEAN           -- T/F on if the employee isn't paid (Mainly for Owner)
+}
+
+ORDER: {                        -- order_<<order ID>>
+    username: STRING            -- user's username
+    location: STRING            -- discord msg ID
+    items: [OBJECTS]            -- array of item objects
+    cost: NUMBER                -- amount of order
+    supplied: BOOLEAN           -- T/F of if items were confirmed supplied
+    prepaid: BOOLEAN            -- T/F of if order is paid
+    print: STRING               -- Fingerprint
+}
+
+USER: {                         -- user_<<fingerprint ID>>
+    names: [STRINGS]            -- array of used names
+    suggestions: [STRINGS]      -- list of suggestions made
+    debt: NUMBER                -- amount of debt user has
+    banned: STRING              -- ban reason (blank if not banned)
+}
+
+ORDER.items : [
+    {
+        itemID
+        variant
+        amount
+    }
+]
+
+USERNAMEUPDATED : {
+    oldName: STRING             -- old username
+    newName: STRING             -- new username
+}
+
+DEBT : {
+    STRING: {                   -- username of debtor
+        STRING:                 -- order ID
+            NUMBER              -- cost for order 
+
+    }
+}

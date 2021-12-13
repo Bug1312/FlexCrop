@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FlexCrop Online</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="/webpages/shared/shared.css" rel="stylesheet">
+    <link href="/webpages/supply/supply.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/data/images/other/favicon-stuff/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/data/images/other/favicon-stuff/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/data/images/other/favicon-stuff/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/data/images/other/favicon-stuff/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/data/images/other/favicon-stuff/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/data/images/other/favicon-stuff/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/data/images/other/favicon-stuff/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/data/images/other/favicon-stuff/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/data/images/other/favicon-stuff/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/data/images/other/favicon-stuff/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/data/images/other/favicon-stuff/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/data/images/other/favicon-stuff/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/data/images/other/favicon-stuff/favicon-16x16.png">
+    <link rel="manifest" href="/data/images/other/favicon-stuff/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/data/images/other/favicon-stuff/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FlexCrop Online" />
+    <meta property="og:description" content="Supply FlexCrop items for money!" />
+    <meta property="og:image" content="/data/images/other/logoShort.png" />
+</head>
+
+<body onload="addJSON(['MenuPages','Supplies','SupplyLeaderboards']);loadLeaderboards();">
+    <nav>
+        <section class="nav-top">
+            <div class="menu-logo-search-cart">
+                <a class="hamburger-menu" mobile onclick="showOverlays(['.shadow-overlay','.menu-overlay'])">
+                    <span class="material-icons-round md-36 md-light">menu</span>
+                </a>
+                <img class="logo" src="/data/images/other/main_logo/logo.png" alt="logo" onclick="homePageRedirect(this)">
+                <a class="leaderboard-button" onclick="showOverlays(['.shadow-overlay','.leaderboard-overlay'])" mobile>
+                    <span class="material-icons-outlined md-36 md-light">leaderboard</span>
+                </a>
+            </div>
+        </section>
+        <section class="nav-mid">
+            <div class="menu-container menu" desktop></div>
+        </section>
+    </nav>
+    <main>
+        <section class="section-left" desktop>
+            <div>
+                <h3 class="side-leaderboard-header">Supplier Leaderboards</h3>
+                <ol class="leaderboard-list">
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">1</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">2</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">3</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">4</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">5</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">6</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">7</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">8</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">9</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee" title="0 Item(s)">
+                        <p class="leaderboardee-placement">10</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+
+                </ol>
+            </div>
+            <section class="ads">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- FlexCrop-Desktop-SectionLeft -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7608664669993574" data-ad-slot="7952065800" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </section>
+        </section>
+        <section class="section-main">
+            <div class="main-headers">
+                <h2>Supply Us!</h2>
+                <p>Almost Instant Cash! Click <a class="header-anchor" onclick="showOverlays(['.shadow-overlay','.about-overlay'])">here</a> to learn more!</p>
+            </div>
+            <div id="supplies-container">
+                <h3> Loading Supplies... </h3>
+            </div>
+        </section>
+        <section class="section-bottom">
+            <footer>
+                <a name="copyright">Copyright © 2021 </a>
+                <a name="terms" href="/terms">Terms</a>
+                <a name="discord" href="https://discord.com/invite/vwwaxuvhT4">Discord</a>
+            </footer>
+        </section>
+    </main>
+    <overlay>
+        <div class="shadow-overlay" onclick="hideOverlays(['.shadow-overlay','.menu-overlay', '.leaderboard-overlay', '.popup-overlay', '.about-overlay', '.confirm-overlay'])">
+        </div>
+        <div class="menu-container menu-overlay" mobile>
+            <div class="mobile-menu-header">
+                <h3>FlexCrop Menu</h3>
+                <span class="material-icons-round" onclick="hideOverlays(['.shadow-overlay','.menu-overlay'])">clear</span>
+            </div>
+            <div class="mobile-menu-links"></div>
+        </div>
+        <div class="leaderboard-overlay" mobile>
+            <div class="leaderboard-header">
+                <h3>Supplier Leaderboards</h3>
+                <span class="material-icons-round" onclick="hideOverlays(['.shadow-overlay','.leaderboard-overlay'])">clear</span>
+            </div>
+            <div class="side-leaderboard-list">
+                <ol class="leaderboard-list">
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">1</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">2</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">3</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">4</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">5</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">6</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">7</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">8</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">9</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                    <li class="leaderboardee">
+                        <p class="leaderboardee-placement">10</p>
+                        <img class="leaderboardee-img" src="https://minotar.net/helm/MHF_Steve" pixelated>
+                        <p class="leaderboardee-name"></p>
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="popup-overlay">
+            <h1 class="popup-title">Supply Run!</h1>
+            <span class="material-icons-round popup-cancel md-36" onclick="hideOverlays(['.shadow-overlay','.popup-overlay'])">clear</span>
+            <ol id="popup-list">
+            </ol>
+            <h2 id="popup-pay"></h2>
+            <button class="popup-confirm" onclick="hideOverlays(['.popup-overlay']);showOverlays(['.confirm-overlay'])">
+                I supplied these! </button>
+        </div>
+        <div class="about-overlay text-overlay">
+            <div class="overlay-header">
+                <h1>Supply Us!</h1>
+                <span class="material-icons-round popup-cancel md-36" onclick="hideOverlays(['.shadow-overlay','.about-overlay'])">clear</span>
+            </div>
+            <p>FlexCrop now gives you the opportunity to get fast cash for working, without being an employee!</p>
+            <p>You get items, you place them in a chest at <b>-1313 69 -1999 in the overworld</b> with your name, click the sign to confirm, click the button on the website to confirm!
+                You get money the next we can contact you! (Ignore Entities)</p>
+        </div>
+        <div class="confirm-overlay text-overlay">
+            <div class="overlay-header">
+                <h1> <span class="material-icons">
+                        warning
+                    </span> Confirm</h1>
+                <span class="material-icons-round popup-cancel md-36" onclick="hideOverlays(['.confirm-overlay'])">clear</span>
+            </div>
+            <p>Make sure to only to press confirm when you have placed the items in the chest with your name or you
+                may be banned from the website</p>
+            <button class="popup-confirm" onclick="notifyFlexCrop()">Confirm</button>
+        </div>
+    </overlay>
+</body>
+<script async src="//cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
+<script src="/webpages/shared/shared.js" type="text/javascript"></script>
+<script src="/webpages/supply/supply.js" type="text/javascript"></script>
+
+</html>

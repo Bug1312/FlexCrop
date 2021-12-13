@@ -1,0 +1,23 @@
+{
+    "name": "flexcrop-site",
+    "description": "Website for DMU shop: FlexCrop",
+    "main": "flexcrop.js",
+    "scripts": {
+        "start": "node flexcrop.js"
+    },
+    "devDependencies": {
+        "@fingerprintjs/fingerprintjs": "^3.1.2",
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "cookie-parser": "^1.4.5",
+        "discord.js": "^12.4.1",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-minify": "^1.0.0",
+        "fs-database": "^1.0.2",
+        "minecraft-server-util": "^3.5.1",
+        "uglify-js": "^3.14.1"
+    },
+    "license": "MIT",
+    "author": "Bug1312"
+}

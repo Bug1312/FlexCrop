@@ -1,0 +1,21 @@
+# Bloat
+package-lock.json
+node_modules/
+.vscode/
+
+# Secrets
+.env
+
+# Database Stuff
+database/*
+!database/data_leaderboard
+!database/data_maintenance
+
+# Developer Bloat
+public/data/images/delivery/+16x/webp
+public/data/images/items/+16x/webp
+public/data/images/other/main_logo/*
+!public/data/images/other/main_logo/logo.png
+public/data/images/other/min_logo/*
+!public/data/images/other/min_logo/logoShort.png
+Updates.txt

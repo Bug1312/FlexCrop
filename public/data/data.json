@@ -1,0 +1,3054 @@
+{
+    "Items": [{
+            "name": "2Dis",
+            "defCountCost": 1,
+            "defCost": 200,
+            "image": "/data/images/items/+16x/png/2dis.png",
+            "tags": [
+                "item",
+                "dm",
+                "tool"
+            ],
+            "stack": 1
+        },
+        {
+            "name": "Elixir of Life",
+            "defCountCost": 1,
+            "defCost": 2000,
+            "image": "/data/images/items/16x/elixir.png",
+            "tags": [
+                "item",
+                "dm",
+                "tool"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "disabled": true
+        },
+        {
+            "name": "Ender Pearl",
+            "defCountCost": 16,
+            "defCost": 8,
+            "image": "/data/images/items/16x/pearl.png",
+            "tags": [
+                "item",
+                "tool",
+                "vanilla"
+            ],
+            "stack": 16
+        },
+        {
+            "name": "Ghast Tear",
+            "defCountCost": 1,
+            "defCost": 500,
+            "purchaseLimit": 3,
+            "image": "/data/images/items/16x/tear.png",
+            "tags": [
+                "item",
+                "drop",
+                "vanilla"
+            ],
+            "warning": "You may only buy 3 ghast tears at once"
+        },
+        {
+            "name": "End Crystal",
+            "defCountCost": 1,
+            "defCost": 3500,
+            "image": "/data/images/items/16x/endcrystal.png",
+            "tags": [
+                "item",
+                "tool",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Steel Ingot",
+            "defCountCost": 20,
+            "defCost": 25,
+            "image": "/data/images/items/16x/steel.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Titanium Ingot",
+            "defCountCost": 1,
+            "defCost": 15,
+            "image": "/data/images/items/16x/titanium.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "White Point Star",
+            "defCountCost": 1,
+            "defCost": 5000,
+            "image": "/data/images/items/16x/whitepointstar.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 1,
+            "disabled": true
+        },
+        {
+            "name": "Iron Ingot",
+            "defCountCost": 1,
+            "defCost": 15,
+            "image": "/data/images/items/16x/iron.png",
+            "tags": [
+                "item",
+                "ore",
+                "vanilla"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Sonic Crystal",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/crystal.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Lonsdaleite",
+            "defCountCost": 1,
+            "defCost": 1000,
+            "image": "/data/images/items/16x/lonsdaleite.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Brass Ingot",
+            "defCountCost": 1,
+            "defCost": 20,
+            "image": "/data/images/items/16x/brass.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Dalekanium Ingot",
+            "defCountCost": 1,
+            "defCost": 25,
+            "image": "/data/images/items/16x/dalekanium.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Crystalline",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/crystaline.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Gold Ingot",
+            "defCountCost": 1,
+            "defCost": 15,
+            "image": "/data/images/items/16x/gold.png",
+            "tags": [
+                "item",
+                "ore",
+                "vanilla"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Silicon",
+            "defCountCost": 64,
+            "defCost": 20,
+            "image": "/data/images/items/16x/silicon.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Empty Map",
+            "defCountCost": 1,
+            "defCost": 100,
+            "image": "/data/images/items/16x/map.png",
+            "tags": [
+                "item",
+                "tool",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Lapis Lazuli",
+            "defCountCost": 1,
+            "defCost": 30,
+            "image": "/data/images/items/16x/lapis.png",
+            "tags": [
+                "item",
+                "ore",
+                "vanilla"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Magma Cream",
+            "defCountCost": 1,
+            "defCost": 175,
+            "image": "/data/images/items/16x/cream.png",
+            "tags": [
+                "item",
+                "drop",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Blaze Rod",
+            "defCountCost": 1,
+            "defCost": 25,
+            "image": "/data/images/items/16x/blazerod.png",
+            "tags": [
+                "item",
+                "drop",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Diamond",
+            "defCountCost": 1,
+            "defCost": 40,
+            "image": "/data/images/items/16x/diamond.png",
+            "tags": [
+                "item",
+                "ore",
+                "vanilla"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Leather",
+            "defCountCost": 1,
+            "defCost": 35,
+            "image": "/data/images/items/16x/leather.png",
+            "tags": [
+                "item",
+                "drop",
+                "vanilla"
+            ],
+            "purchaseLimit": 32
+        },
+        {
+            "name": "Thana Apple",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/thana.png",
+            "tags": [
+                "item",
+                "dm",
+                "food"
+            ],
+            "purchaseLimit": 15
+        },
+        {
+            "name": "Plastic",
+            "defCountCost": 64,
+            "defCost": 50,
+            "image": "/data/images/items/16x/plastic.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore",
+                "drop"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Coal",
+            "defCountCost": 64,
+            "defCost": 10,
+            "image": "/data/images/items/16x/coal.png",
+            "tags": [
+                "item",
+                "ore",
+                "vanilla"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Redstone",
+            "defCountCost": 1,
+            "defCost": 1,
+            "image": "/data/images/items/16x/redstone.png",
+            "tags": [
+                "item",
+                "ore",
+                "red",
+                "vanilla"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Quartz",
+            "defCountCost": 32,
+            "defCost": 50,
+            "image": "/data/images/items/16x/quartz.png",
+            "tags": [
+                "item",
+                "ore",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Nether Wart",
+            "defCountCost": 5,
+            "defCost": 45,
+            "image": "/data/images/items/16x/wart.png",
+            "tags": [
+                "item",
+                "plant",
+                "dim",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Slimeball",
+            "defCountCost": 1,
+            "defCost": 15,
+            "image": "/data/images/items/16x/slimeball.png",
+            "tags": [
+                "item",
+                "drop",
+                "vanilla"
+            ],
+            "purchaseLimit": 30
+        },
+        {
+            "name": "Fries",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/fries.png",
+            "tags": [
+                "item",
+                "dm",
+                "food"
+            ]
+        },
+        {
+            "name": "Kronk Burger",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/kronkburger.png",
+            "tags": [
+                "item",
+                "dm",
+                "food"
+            ]
+        },
+        {
+            "name": "Kronk Shake",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/kronkshake.png",
+            "tags": [
+                "item",
+                "dm",
+                "food"
+            ]
+        },
+        {
+            "name": "Ice Cream",
+            "defCountCost": 1,
+            "defCost": 20,
+            "image": "/data/images/items/16x/icecream.png",
+            "tags": [
+                "item",
+                "dm",
+                "food"
+            ]
+        },
+        {
+            "name": "Lemonade",
+            "defCountCost": 1,
+            "defCost": 35,
+            "image": "/data/images/items/16x/lemonade.png",
+            "tags": [
+                "item",
+                "dm",
+                "food"
+            ],
+            "disabled": true
+        },
+        {
+            "name": "Name Tag",
+            "defCountCost": 1,
+            "defCost": 2000,
+            "image": "/data/images/items/16x/nametag.png",
+            "tags": [
+                "item",
+                "tool",
+                "vanilla"
+            ],
+            "purchaseLimit": 1
+        },
+        {
+            "name": "Emerald",
+            "defCountCost": 1,
+            "defCost": 100,
+            "image": "/data/images/items/16x/emerald.png",
+            "tags": [
+                "item",
+                "ore",
+                "vanilla"
+            ],
+            "purchaseLimit": 192
+        },
+        {
+            "name": "Blue Quartz",
+            "defCountCost": 10,
+            "defCost": 5,
+            "image": "/data/images/items/16x/bluequartz.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ]
+        },
+        {
+            "name": "Nitro9",
+            "defCountCost": 1,
+            "defCost": 50,
+            "image": "/data/images/items/16x/nitro9.png",
+            "tags": [
+                "block",
+                "item",
+                "dm",
+                "tool"
+            ]
+        },
+        {
+            "name": "Rotten Flesh",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/flesh.png",
+            "tags": [
+                "item",
+                "drop",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Oxygen Canister",
+            "defCountCost": 1,
+            "defCost": 100,
+            "image": "/data/images/items/16x/o2_canister.png",
+            "tags": [
+                "item",
+                "dm",
+                "tool"
+            ],
+            "stack": 1
+        },
+        {
+            "name": "Storymode?",
+            "defCountCost": 1,
+            "defCost": 100,
+            "image": "/data/images/items/16x/storymode.png",
+            "tags": [
+                "item",
+                "dm",
+                "tool"
+            ]
+        },
+        {
+            "name": "Seeds",
+            "defCountCost": 64,
+            "defCost": 10,
+            "image": "/data/images/items/16x/seeds_wheat.png",
+            "tags": [
+                "item",
+                "plant",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Melon Seeds",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/seeds_melon.png",
+            "tags": [
+                "item",
+                "plant",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Pumpkin Seeds",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/seeds_pumpkin.png",
+            "tags": [
+                "item",
+                "plant",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Cocoa Beans",
+            "defCountCost": 1,
+            "defCost": 20,
+            "image": "/data/images/items/16x/seeds_cocoa.png",
+            "tags": [
+                "item",
+                "plant",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Beetroot Seeds",
+            "defCountCost": 1,
+            "defCost": 10,
+            "image": "/data/images/items/16x/seeds_beetroot.png",
+            "tags": [
+                "item",
+                "plant",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Sugarcane",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/sugarcane.png",
+            "tags": [
+                "item",
+                "plant",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Chorus Fruit",
+            "defCountCost": 10,
+            "defCost": 5,
+            "image": "/data/images/items/16x/chorusfruit.png",
+            "tags": [
+                "item",
+                "food",
+                "dim",
+                "plant",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Villager",
+            "defCountCost": 1,
+            "defCost": 5000,
+            "image": "/data/images/items/+16x/png/villager_brown.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "purchaseLimit": 2,
+            "warning": "Villagers are only sold by appearance <br /> Only 2 Villagers per order",
+            "stack": 0,
+            "nameLock": true,
+            "disabled": true,
+            "variants": [{
+                    "image": "/data/images/items/+16x/png/villager_brown.png",
+                    "variantName": "Brown Coat"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/villager_white.png",
+                    "variantName": "White Coat"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/villager_purple.png",
+                    "variantName": "Purple Coat"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/villager_apron_white.png",
+                    "variantName": "White Apron"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/villager_apron_black.png",
+                    "variantName": "Black Apron"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/villager_green.png",
+                    "variantName": "Green Coat"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/villager_brown.png",
+                    "variantName": "Brown Coat"
+                }
+            ]
+        },
+        {
+            "name": "Gallifrey Falls",
+            "defCountCost": 1,
+            "defCost": 35,
+            "image": "/data/images/items/16x/painting.png",
+            "tags": [
+                "dm",
+                "block",
+                "decor"
+            ],
+            "stack": 1
+        },
+        {
+            "name": "Zeiton Block",
+            "defCountCost": 1,
+            "defCost": 45,
+            "image": "/data/images/items/+16x/png/zeitonblock.png",
+            "tags": [
+                "dm",
+                "block"
+            ]
+        },
+        {
+            "name": "Gallifrey Stone",
+            "defCountCost": 192,
+            "defCost": 5,
+            "image": "/data/images/items/+16x/png/gallifreystone.png",
+            "tags": [
+                "dm",
+                "block",
+                "dim"
+            ]
+        },
+        {
+            "name": "Netherrack",
+            "defCountCost": 192,
+            "defCost": 5,
+            "image": "/data/images/items/+16x/png/netherack.png",
+            "tags": [
+                "block",
+                "dim",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Note Block",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/+16x/png/noteblock.png",
+            "tags": [
+                "block",
+                "red",
+                "vanilla",
+                "disc"
+            ]
+        },
+        {
+            "name": "Pepsi",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/pepsi.png",
+            "tags": [
+                "food",
+                "dm",
+                "item"
+            ]
+        },
+        {
+            "name": "Fruitcake",
+            "defCountCost": 50,
+            "defCost": 10,
+            "image": "/data/images/items/16x/fruitcake.png",
+            "tags": [
+                "food",
+                "dm",
+                "item"
+            ]
+        },
+        {
+            "name": "Pig",
+            "defCountCost": 1,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/pig.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "stack": 0,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Rise of the Cybermasters",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_cybermasters.png",
+            "tags": [
+                "item",
+                "disc",
+                "dm"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc The Dark and Endless Dalek Night",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_storm.png",
+            "tags": [
+                "item",
+                "disc",
+                "dm"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc I am The Doctor",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_iatd.png",
+            "tags": [
+                "item",
+                "disc",
+                "dm"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true,
+            "disabled": true
+        },
+        {
+            "name": "Music Disc Dalek Mod 2014 Theme",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_dm_theme_14.png",
+            "tags": [
+                "item",
+                "disc",
+                "dm"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true,
+            "disabled": true
+        },
+        {
+            "name": "Music Disc Dalek Mod 2020 Theme",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_dm_theme_20.png",
+            "tags": [
+                "item",
+                "disc",
+                "dm"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true,
+            "disabled": true
+        },
+        {
+            "name": "Music Disc Resonance of the Daleks",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_daleks.png",
+            "tags": [
+                "item",
+                "disc",
+                "dm"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Army of Zarbi",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_zarbi.png",
+            "tags": [
+                "item",
+                "disc",
+                "dm"
+            ],
+            "stack": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Conquest of the Cybermen",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_cybermen.png",
+            "tags": [
+                "item",
+                "disc",
+                "dm"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "disabled": true,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc 11",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_11.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc 13",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_13.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Blocks",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_blocks.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Cat",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_cat.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Chirp",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_chirp.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Far",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_far.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Mall",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_mall.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Mellohi",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_mellohi.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Stal",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_stal.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Strad",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_strad.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Wait",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_wait.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Music Disc Ward",
+            "defCountCost": 1,
+            "defCost": 10000,
+            "image": "/data/images/items/16x/record_ward.png",
+            "tags": [
+                "item",
+                "disc",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1,
+            "nameLock": true
+        },
+        {
+            "name": "Space Suit",
+            "defCountCost": 1,
+            "defCost": 1000,
+            "image": "/data/images/items/16x/spacesuit_doctor.png",
+            "tags": [
+                "item",
+                "dm",
+                "tool"
+            ],
+            "stack": 0.25,
+            "nameLock": true,
+            "variants": [{
+                    "image": "/data/images/items/16x/spacesuit_doctor.png",
+                    "variantName": "Doctors Space Suit"
+                },
+                {
+                    "image": "/data/images/items/16x/spacesuit_nasa_white.png",
+                    "variantName": "NASA Space Suit"
+                },
+                {
+                    "image": "/data/images/items/16x/spacesuit_nasa_orange.png",
+                    "variantName": "NASA Orange Space Suit"
+                },
+                {
+                    "image": "/data/images/items/16x/spacesuit_swd.png",
+                    "variantName": "SWD Space Program Suit"
+                }
+            ]
+        },
+        {
+            "name": "Chameleon Circuit",
+            "defCountCost": 1,
+            "defCost": 200,
+            "image": "/data/images/items/16x/cartridge.png",
+            "tags": [
+                "item",
+                "dm",
+                "tool"
+            ],
+            "stack": 1,
+            "variants": [{
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod A (2013)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod B (2014)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod C (2013)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod D (2013)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "1st Doctors (1963)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "War Doctors"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "5th Doctors (1981)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod Bad Wolf"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Bill and Teds Phone Booth"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Lego Dimensions"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Vanilla MC Tardis (#12)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod Clara Tribute"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "11th Doctors (2010)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "9th Doctors (2005)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod Alpha"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod Beta"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod Delta"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod Gamma"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod Hexon"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Vanilla Oak Tree"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Fridge"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "12th Doctors (2015)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Ranis"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "DarkWood"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "4th Doctors (1976)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "8th Doctors (1996)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "2nd Doctors (1966)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "10th Doctors (2006)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Vanilla Oak Door"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Eds"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Tuds (K6 Telephone Box)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Blocktors"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Ethoseins"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "K2 Telephone Box"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Pokeball"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod Gingerbread"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Pepsi Vending Machine"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Cola Vending Machine"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod Story Mode"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Vanilla Log"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Vanilla Cobblestone"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Vanilla Bricks"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Shed"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Gizmos"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "AmbientStudios"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Gallifreyan Wardrobe"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Steampunk Wardrobe"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Epismo"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "13th Doctors (2019)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Chronotis"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "3rd Doctors (1973)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Cushing Doctors"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Grandfather Clock"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Ruths"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Dalek Mod 2014"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Tempus"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Happiness Patrol (1988)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "PortaPotty"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Vanilla Dirt House"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Vanilla MC Tardis (#60)"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Valient"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "BlueFire"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Portal"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "TARDIM"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Nether Portal"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "The Masters Column"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "End Portal"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "SB-129 Time Machine"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Cute"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "RGB"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Pride"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Aly"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Cyber Capsule"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "CYMK"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Technicolor"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Vintage 70s"
+                },
+                {
+                    "image": "/data/images/items/16x/cartridge.png",
+                    "variantName": "Synthwave"
+                }
+            ]
+        },
+        {
+            "name": "Bessie",
+            "defCountCost": 1,
+            "defCost": 500,
+            "image": "/data/images/items/16x/vehicle_bessie.png",
+            "tags": [
+                "item",
+                "dm",
+                "entity"
+            ]
+        },
+        {
+            "name": "Delorean",
+            "defCountCost": 1,
+            "defCost": 500,
+            "image": "/data/images/items/16x/vehicle_delorean.png",
+            "tags": [
+                "item",
+                "dm",
+                "entity"
+            ]
+        },
+        {
+            "name": "Davros Chair",
+            "defCountCost": 1,
+            "defCost": 500,
+            "image": "/data/images/items/16x/vehicle_davros.png",
+            "tags": [
+                "item",
+                "dm",
+                "entity"
+            ]
+        },
+        {
+            "name": "UNIT Jeep",
+            "defCountCost": 1,
+            "defCost": 1000,
+            "image": "/data/images/items/16x/vehicle_jeep.png",
+            "tags": [
+                "item",
+                "dm",
+                "entity"
+            ]
+        },
+        {
+            "name": "Hologram",
+            "defCountCost": 1,
+            "defCost": 50,
+            "image": "/data/images/items/16x/hologram.png",
+            "tags": [
+                "block",
+                "dm"
+            ]
+        },
+        {
+            "name": "Chair",
+            "defCountCost": 1,
+            "defCost": 45,
+            "image": "/data/images/items/16x/chair_coral.png",
+            "tags": [
+                "block",
+                "dm",
+                "decor"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/16x/chair_coral.png",
+                    "variantName": "Coral"
+                },
+                {
+                    "image": "/data/images/items/16x/chair_wooden.png",
+                    "variantName": "Hartnell"
+                },
+                {
+                    "image": "/data/images/items/16x/chair_copper.png",
+                    "variantName": "Copper"
+                },
+                {
+                    "image": "/data/images/items/16x/chair_office.png",
+                    "variantName": "Office"
+                },
+                {
+                    "image": "/data/images/items/16x/chair_missy.png",
+                    "variantName": "Missy"
+                },
+                {
+                    "image": "/data/images/items/16x/chair_armchair.png",
+                    "variantName": "Armchair"
+                },
+                {
+                    "image": "/data/images/items/16x/chair_movie.png",
+                    "variantName": "TV Movie"
+                },
+                {
+                    "image": "/data/images/items/16x/chair_newbery.png",
+                    "variantName": "Newbery"
+                }
+            ]
+        },
+        {
+            "name": "Flowers",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/flower_rose.png",
+            "tags": [
+                "block",
+                "plant",
+                "vanilla"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/16x/flower_rose.png",
+                    "variantName": "Rose"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_paeonia_top.png",
+                    "variantName": "Paeonia"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_roses.png",
+                    "variantName": "Tall Roses"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_sunflower.png",
+                    "variantName": "Sunflower"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_syringa.png",
+                    "variantName": "Syringa"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_allium.png",
+                    "variantName": "Allium"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_orchid.png",
+                    "variantName": "Blue Orchid"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_dandelion.png",
+                    "variantName": "Dandelion"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_houstonia.png",
+                    "variantName": "Houstonia"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_daisy.png",
+                    "variantName": "Oxeye Daisy"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_tulip_orange.png",
+                    "variantName": "Orange Tulip"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_tulip_pink.png",
+                    "variantName": "Pink Tulip"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_tulip_red.png",
+                    "variantName": "Red Tulip"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_tulip_white.png",
+                    "variantName": "White Tulip"
+                }
+            ]
+        },
+        {
+            "name": "Sapling",
+            "defCountCost": 1,
+            "defCost": 50,
+            "image": "/data/images/items/16x/sapling_oak.png",
+            "tags": [
+                "block",
+                "plant",
+                "vanilla"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/16x/sapling_oak.png",
+                    "variantName": "Oak"
+                },
+                {
+                    "image": "/data/images/items/16x/sapling_darkoak.png",
+                    "variantName": "Dark Oak"
+                },
+                {
+                    "image": "/data/images/items/16x/sapling_spruce.png",
+                    "variantName": "Spruce"
+                },
+                {
+                    "image": "/data/images/items/16x/sapling_acacia.png",
+                    "variantName": "Acacia"
+                },
+                {
+                    "image": "/data/images/items/16x/sapling_birch.png",
+                    "variantName": "Birch"
+                },
+                {
+                    "image": "/data/images/items/16x/sapling_jungle.png",
+                    "variantName": "Jungle"
+                }
+            ]
+        },
+        {
+            "name": "Cat (Tamed)",
+            "defCountCost": 1,
+            "defCost": 1000,
+            "image": "/data/images/items/+16x/png/cat_siamese.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "stack": 0,
+            "disabled": true,
+            "nameLock": true,
+            "warning": "Type may vary"
+        },
+        {
+            "name": "Llama",
+            "defCountCost": 1,
+            "defCost": 1000,
+            "image": "/data/images/items/+16x/png/llama_creamy.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "disabled": true,
+            "stack": 0,
+            "nameLock": true,
+            "warning": "Type may vary"
+        },
+        {
+            "name": "Cow",
+            "defCountCost": 1,
+            "defCost": 100,
+            "image": "/data/images/items/+16x/png/cow.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "stack": 0,
+            "nameLock": true
+        },
+        {
+            "name": "Pink Fluffy Dalek",
+            "defCountCost": 1,
+            "defCost": 1000,
+            "image": "/data/images/items/+16x/png/pfd.png",
+            "tags": [
+                "entity",
+                "dm"
+            ],
+            "stack": 0,
+            "nameLock": true,
+            "warning": "These entities are killed during lag removal"
+        },
+        {
+            "name": "Dog (Tamed)",
+            "defCountCost": 1,
+            "defCost": 1000,
+            "image": "/data/images/items/+16x/png/wolf.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "stack": 0,
+            "nameLock": true
+        },
+        {
+            "name": "Horse (Tamed)",
+            "defCountCost": 1,
+            "defCost": 2000,
+            "image": "/data/images/items/+16x/png/horse_light_brown.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "stack": 0,
+            "nameLock": true,
+            "disabled": true,
+            "warning": "Type may vary"
+        },
+        {
+            "name": "Polar Bear",
+            "defCountCost": 1,
+            "defCost": 2000,
+            "image": "/data/images/items/+16x/png/bear.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "stack": 0,
+            "disabled": true,
+            "nameLock": true
+        },
+        {
+            "name": "Parrot (Tamed)",
+            "defCountCost": 1,
+            "defCost": 4000,
+            "image": "/data/images/items/+16x/png/parrot_red.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "disabled": true,
+            "stack": 0,
+            "nameLock": true
+        },
+        {
+            "name": "Endermite",
+            "defCountCost": 1,
+            "defCost": 3000,
+            "image": "/data/images/items/+16x/png/endermite.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "stack": 0,
+            "nameLock": true,
+            "warning": "These entities are killed during lag removal"
+        },
+        {
+            "name": "Chrous Flower",
+            "defCountCost": 1,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/chorusflower.png",
+            "tags": [
+                "plant",
+                "block",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Dispenser",
+            "defCountCost": 1,
+            "defCost": 15,
+            "image": "/data/images/items/+16x/png/dispenser.png",
+            "tags": [
+                "red",
+                "block",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Dropper",
+            "defCountCost": 1,
+            "defCost": 7,
+            "image": "/data/images/items/+16x/png/dropper.png",
+            "tags": [
+                "red",
+                "block",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Observer",
+            "defCountCost": 1,
+            "defCost": 10,
+            "image": "/data/images/items/+16x/png/observer.png",
+            "tags": [
+                "red",
+                "block",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Hopper",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/+16x/png/hopper.png",
+            "tags": [
+                "red",
+                "block",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Jukebox",
+            "defCountCost": 1,
+            "defCost": 100,
+            "image": "/data/images/items/+16x/png/jukebox.png",
+            "tags": [
+                "block",
+                "disc",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Piston",
+            "defCountCost": 1,
+            "defCost": 25,
+            "image": "/data/images/items/+16x/png/piston.png",
+            "tags": [
+                "red",
+                "block",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Ender Chest",
+            "defCountCost": 1,
+            "defCost": 100,
+            "image": "/data/images/items/+16x/png/chest_ender.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Shulker Box",
+            "defCountCost": 1,
+            "defCost": 5000,
+            "image": "/data/images/items/+16x/png/shulker_box_purple.png",
+            "tags": [
+                "block",
+                "item",
+                "tool",
+                "vanilla"
+            ],
+            "stack": 1,
+            "purchaseLimit": 1
+        },
+        {
+            "name": "Tardis Key",
+            "defCountCost": 1,
+            "defCost": 25,
+            "image": "/data/images/items/16x/key_tardis.png",
+            "tags": [
+                "item",
+                "tool",
+                "dm"
+            ],
+            "stack": 1,
+            "variants": [{
+                    "image": "/data/images/items/16x/key_tardis.png",
+                    "variantName": "Tardis Key"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/key_yale.png",
+                    "variantName": "Yale Key"
+                }
+            ]
+        },
+        {
+            "name": "Stattenhiem Remote",
+            "defCountCost": 1,
+            "defCost": 400,
+            "image": "/data/images/items/+16x/png/key_remote.png",
+            "tags": [
+                "dm",
+                "item",
+                "tool"
+            ],
+            "stack": 1
+        },
+        {
+            "name": "Vortex Manipulator",
+            "defCountCost": 1,
+            "defCost": 1000,
+            "image": "/data/images/items/+16x/png/vm.png",
+            "tags": [
+                "dm",
+                "item",
+                "tool"
+            ],
+            "stack": 1
+        },
+        {
+            "name": "Sonic Screwdriver",
+            "defCountCost": 1,
+            "defCost": 150,
+            "image": "/data/images/items/+16x/png/sonic_9-10.png",
+            "tags": [
+                "item",
+                "tool",
+                "dm"
+            ],
+            "stack": 1,
+            "variants": [{
+                    "image": "/data/images/items/+16x/png/sonic_9-10.png",
+                    "variantName": "9ths / 10ths"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_11.png",
+                    "variantName": "11ths"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_4.png",
+                    "variantName": "4ths"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_7.png",
+                    "variantName": "7ths"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_12.png",
+                    "variantName": "12ths"
+                },
+                {
+                    "image": "/data/images/items/16x/sonic_shades.png",
+                    "variantName": "Sonic Shades"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_romana.png",
+                    "variantName": "Romanas"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_etho.png",
+                    "variantName": "Ethos"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_drwho.png",
+                    "variantName": "DrWhos"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_hybrid.png",
+                    "variantName": "3rd/12ths"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_laser.png",
+                    "variantName": "Laser"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_umbrella.png",
+                    "variantName": "7ths Umbrella"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_ed.png",
+                    "variantName": "Eds"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_wood.png",
+                    "variantName": "Wooden Sonic"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_lynoleum.png",
+                    "variantName": "Lynoleums"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_killer.png",
+                    "variantName": "Killers"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_usb.png",
+                    "variantName": "USB"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_screwdriver.png",
+                    "variantName": "Screwdriver"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_steampunk.png",
+                    "variantName": "Steampunk"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_cane.png",
+                    "variantName": "Cane"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_lipstick.png",
+                    "variantName": "Lipstick"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_2.png",
+                    "variantName": "2nds"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_8.png",
+                    "variantName": "8ths"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_13.png",
+                    "variantName": "13ths"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/sonic_river.png",
+                    "variantName": "River Songs"
+                }
+            ]
+        },
+        {
+            "name": "Sheep",
+            "defCountCost": 1,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/sheep_white.png",
+            "tags": [
+                "entity",
+                "vanilla"
+            ],
+            "stack": 0,
+            "nameLock": true
+        },
+        {
+            "name": "Safe",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/+16x/png/safe.png",
+            "tags": [
+                "block",
+                "dm"
+            ]
+        },
+        {
+            "name": "Bio Damper",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/+16x/png/biodamper.png",
+            "tags": [
+                "item",
+                "tool",
+                "dm"
+            ]
+        },
+        {
+            "name": "Fob Watch",
+            "defCountCost": 1,
+            "defCost": 100,
+            "image": "/data/images/items/+16x/png/fob.png",
+            "tags": [
+                "item",
+                "tool",
+                "dm"
+            ],
+            "stack": 1
+        },
+        {
+            "name": "Recorder",
+            "defCountCost": 1,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/recorder.png",
+            "tags": [
+                "item",
+                "tool",
+                "dm",
+                "disc"
+            ],
+            "stack": 1
+        },
+        {
+            "name": "K-9",
+            "defCountCost": 1,
+            "defCost": 3000,
+            "image": "/data/images/items/16x/k9.png",
+            "tags": [
+                "item",
+                "entity",
+                "dm"
+            ],
+            "stack": 1,
+            "variants": [{
+                    "image": "/data/images/items/16x/k9.png",
+                    "variantName": "Regular"
+                },
+                {
+                    "image": "/data/images/items/16x/k9_aussie.png",
+                    "variantName": "Australian"
+                }
+            ]
+        },
+        {
+            "name": "Dirt",
+            "defCountCost": 64,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/dirt.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 1728
+        },
+        {
+            "name": "Grass Block",
+            "defCountCost": 64,
+            "defCost": 70,
+            "image": "/data/images/items/+16x/png/grass.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 1728
+        },
+        {
+            "name": "Sand",
+            "defCountCost": 64,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/sand.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 1728
+        },
+        {
+            "name": "Packed Ice",
+            "defCountCost": 64,
+            "defCost": 1000,
+            "image": "/data/images/items/+16x/png/ice_packed.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 640
+        },
+        {
+            "name": "Gravel",
+            "defCountCost": 64,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/gravel.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 1728
+        },
+        {
+            "name": "Stone",
+            "defCountCost": 64,
+            "defCost": 70,
+            "image": "/data/images/items/+16x/png/stone.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 1728
+        },
+        {
+            "name": "Cobblestone",
+            "defCountCost": 64,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/stone_cobble.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 1728
+        },
+        {
+            "name": "Granite",
+            "defCountCost": 64,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/stone_granite.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 1728
+        },
+        {
+            "name": "Diorite",
+            "defCountCost": 64,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/stone_diorite.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 1728
+        },
+        {
+            "name": "Andesite",
+            "defCountCost": 64,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/stone_andesite.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "purchaseLimit": 1728
+        },
+        {
+            "name": "Ink sac",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/ink.png",
+            "tags": [
+                "item",
+                "vanilla",
+                "drop"
+            ]
+        },
+        {
+            "name": "Magpie Electrical Van",
+            "defCountCost": 1,
+            "defCost": 500,
+            "image": "/data/images/items/16x/vehicle_van.png",
+            "tags": [
+                "item",
+                "entity",
+                "dm"
+            ]
+        },
+        {
+            "name": "Vespa",
+            "defCountCost": 1,
+            "defCost": 500,
+            "image": "/data/images/items/16x/vehicle_vespa.png",
+            "tags": [
+                "item",
+                "entity",
+                "dm"
+            ]
+        },
+        {
+            "name": "Engine",
+            "defCountCost": 1,
+            "defCost": 100,
+            "image": "/data/images/items/16x/engine.png",
+            "tags": [
+                "item",
+                "dm"
+            ]
+        },
+        {
+            "name": "Monitor",
+            "defCountCost": 1,
+            "defCost": 20,
+            "image": "/data/images/items/16x/monitor.png",
+            "tags": [
+                "block",
+                "dm",
+                "decor"
+            ]
+        },
+        {
+            "name": "Server",
+            "defCountCost": 1,
+            "defCost": 20,
+            "image": "/data/images/items/16x/server.png",
+            "tags": [
+                "block",
+                "dm",
+                "decor"
+            ]
+        },
+        {
+            "name": "Grave",
+            "defCountCost": 1,
+            "defCost": 35,
+            "image": "/data/images/items/16x/grave_4.png",
+            "tags": [
+                "block",
+                "dm",
+                "decor"
+            ]
+        },
+        {
+            "name": "Metalert",
+            "defCountCost": 1,
+            "defCost": 5000,
+            "image": "/data/images/items/16x/metalert.png",
+            "tags": [
+                "item",
+                "dm",
+                "ore"
+            ],
+            "purchaseLimit": 24,
+            "disabled": true
+        },
+        {
+            "name": "Mary Poppins Umbrella",
+            "defCountCost": 1,
+            "defCost": 150,
+            "image": "/data/images/items/+16x/png/umbrella.png",
+            "tags": [
+                "item",
+                "tool",
+                "dm"
+            ]
+        },
+        {
+            "name": "Player Head",
+            "defCountCost": 1,
+            "defCost": 50,
+            "image": "/data/images/items/+16x/png/skull_player.png",
+            "tags": [
+                "block",
+                "item",
+                "vanilla",
+                "decor"
+            ]
+        },
+        {
+            "name": "Terracotta",
+            "defCountCost": 64,
+            "defCost": 70,
+            "image": "/data/images/items/+16x/png/terracotta.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Oxygen Tank",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/o2_tank.png",
+            "tags": [
+                "block",
+                "dm",
+                "tool"
+            ]
+        },
+        {
+            "name": "Santa Hat",
+            "defCountCost": 1,
+            "defCost": 10,
+            "image": "/data/images/items/16x/hat_santa.png",
+            "tags": [
+                "item",
+                "dm",
+                "xmas"
+            ]
+        },
+        {
+            "name": "Wreath",
+            "defCountCost": 1,
+            "defCost": 10,
+            "image": "/data/images/items/16x/wreath.png",
+            "tags": [
+                "block",
+                "dm",
+                "xmas",
+                "decor"
+            ]
+        },
+        {
+            "name": "Christmas Tree",
+            "defCountCost": 1,
+            "defCost": 30,
+            "image": "/data/images/items/16x/christmastree.png",
+            "tags": [
+                "block",
+                "dm",
+                "xmas",
+                "decor"
+            ]
+        },
+        {
+            "name": "Candy Cane",
+            "defCountCost": 1,
+            "defCost": 30,
+            "image": "/data/images/items/+16x/png/candycane_item.png",
+            "tags": [
+                "item",
+                "dm",
+                "xmas",
+                "food"
+            ]
+        },
+        {
+            "name": "Dalek Mod Flowers",
+            "defCountCost": 1,
+            "defCost": 30,
+            "image": "/data/images/items/16x/flower_petrified.png",
+            "tags": [
+                "block",
+                "plant",
+                "dm"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/16x/flower_petrified.png",
+                    "variantName": "Petrified Flower"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_awabloom.png",
+                    "variantName": "Awabloom"
+                },
+                {
+                    "image": "/data/images/items/16x/flower_cichorium.png",
+                    "variantName": "Cichorium"
+                }
+            ]
+        },
+        {
+            "name": "Cactus",
+            "defCountCost": 1,
+            "defCost": 10,
+            "image": "/data/images/items/+16x/png/cactus.png",
+            "tags": [
+                "block",
+                "vanilla",
+                "plant"
+            ]
+        },
+        {
+            "name": "Waffle",
+            "defCountCost": 1,
+            "defCost": 60,
+            "image": "/data/images/items/16x/waffle.png",
+            "tags": [
+                "item",
+                "dm",
+                "food"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/16x/waffle.png",
+                    "variantName": "Waffle"
+                },
+                {
+                    "image": "/data/images/items/16x/waffle_toasted.png",
+                    "variantName": "Toasted Waffle"
+                }
+            ]
+        },
+        {
+            "name": "Bone",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/bone.png",
+            "tags": [
+                "item",
+                "vanilla",
+                "drop"
+            ]
+        },
+        {
+            "name": "Log",
+            "defCountCost": 64,
+            "defCost": 30,
+            "image": "/data/images/items/+16x/png/log_oak.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/+16x/png/log_oak.png",
+                    "variantName": "Oak Log"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/log_acacia.png",
+                    "variantName": "Acacia Log"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/log_birch.png",
+                    "variantName": "Birch Log"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/log_dark_oak.png",
+                    "variantName": "Dark Oak Log"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/log_jungle.png",
+                    "variantName": "Jungle Log"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/log_spruce.png",
+                    "variantName": "Spruce Log"
+                }
+            ]
+        },
+        {
+            "name": "Firework",
+            "defCountCost": 16,
+            "defCost": 50,
+            "image": "/data/images/items/16x/firework.png",
+            "tags": [
+                "item",
+                "vanilla",
+                "tool"
+            ],
+            "variants": [{
+                "image": "/data/images/items/16x/firework.png",
+                "variantName": "Level 1"
+            }, {
+                "image": "/data/images/items/16x/firework.png",
+                "variantName": "Level 2"
+            }, {
+                "image": "/data/images/items/16x/firework.png",
+                "variantName": "Level 3"
+            }]
+        },
+        {
+            "name": "Glass",
+            "defCountCost": 1,
+            "defCost": 10,
+            "image": "/data/images/items/+16x/png/glass.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ]
+        },
+        {
+            "name": "Stained Glass",
+            "defCountCost": 1,
+            "defCost": 20,
+            "image": "/data/images/items/+16x/png/glass_lime.png",
+            "tags": [
+                "block",
+                "vanilla"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/+16x/png/glass_lime.png",
+                    "variantName": "Lime Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_black.png",
+                    "variantName": "Black Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_blue.png",
+                    "variantName": "Blue Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_brown.png",
+                    "variantName": "Brown Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_cyan.png",
+                    "variantName": "Cyan Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_gray.png",
+                    "variantName": "Gray Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_green.png",
+                    "variantName": "Green Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_light_blue.png",
+                    "variantName": "Light Blue Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_magenta.png",
+                    "variantName": "Magenta Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_orange.png",
+                    "variantName": "Orange Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_pink.png",
+                    "variantName": "Pink Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_purple.png",
+                    "variantName": "Purple Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_red.png",
+                    "variantName": "Red Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_silver.png",
+                    "variantName": "Light Gray Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_white.png",
+                    "variantName": "White Stained Glass"
+                },
+                {
+                    "image": "/data/images/items/+16x/png/glass_yellow.png",
+                    "variantName": "Yellow Stained Glass"
+                }
+            ]
+        },
+        {
+            "name": "Sponge",
+            "defCountCost": 1,
+            "defCost": 200,
+            "image": "/data/images/items/+16x/png/sponge.png",
+            "tags": [
+                "block",
+                "vanilla",
+                "tool"
+            ],
+            "disabled": true
+        },
+        {
+            "name": "Apple",
+            "defCountCost": 1,
+            "defCost": 50,
+            "image": "/data/images/items/16x/apple.png",
+            "tags": [
+                "item",
+                "vanilla",
+                "food"
+            ]
+        },
+        {
+            "name": "Gun Powder",
+            "defCountCost": 1,
+            "defCost": 5,
+            "image": "/data/images/items/16x/gunpowder.png",
+            "tags": [
+                "item",
+                "vanilla",
+                "drop"
+            ]
+        },
+        {
+            "name": "Untempered Schism",
+            "defCountCost": 1,
+            "defCost": 20000,
+            "image": "/data/images/items/16x/untempered_schism.png",
+            "tags": [
+                "block",
+                "dm",
+                "decor"
+            ],
+            "disabled": true,
+            "purchaseLimit": 1
+        },
+        {
+            "name": "Book and Quill",
+            "defCountCost": 1,
+            "defCost": 20,
+            "stack": 1,
+            "image": "/data/images/items/16x/book_writable.png",
+            "tags": [
+                "item",
+                "vanilla"
+            ],
+            "nameLock": true,
+            "warning": "You can write the contents of this in your note."
+        }, {
+            "name": "Filled Bucket",
+            "defCountCost": 1,
+            "defCost": 45,
+            "stack": 1,
+            "image": "/data/images/items/16x/bucket_all.gif",
+            "tags": [
+                "item",
+                "dm",
+                "vanilla"
+            ],
+            "variants": [{
+                "image": "/data/images/items/16x/bucket_waste.png",
+                "variantName": "Toxic Waste"
+            }, {
+                "image": "/data/images/items/16x/bucket_water.png",
+                "variantName": "Water"
+            }, {
+                "image": "/data/images/items/16x/bucket_lava.png",
+                "variantName": "Lava"
+            }, {
+                "image": "/data/images/items/16x/bucket_milk.png",
+                "variantName": "Milk"
+            }]
+        }, {
+            "name": "Tardis Shell",
+            "defCountCost": 1,
+            "defCost": 133,
+            "image": "/data/images/items/16x/tardis_shell.png",
+            "tags": [
+                "item",
+                "dm"
+            ]
+        }, {
+            "name": "Item Frame",
+            "defCountCost": 1,
+            "defCost": 37,
+            "image": "/data/images/items/16x/item_frame.png",
+            "tags": [
+                "block",
+                "vanilla",
+                "decor"
+            ]
+        }, {
+            "name": "Redstone Repeater",
+            "defCountCost": 1,
+            "defCost": 37,
+            "image": "/data/images/items/+16x/png/repeater.png",
+            "tags": [
+                "block",
+                "vanilla",
+                "red"
+            ]
+        }, {
+            "name": "Redstone Comparator",
+            "defCountCost": 1,
+            "defCost": 45,
+            "image": "/data/images/items/+16x/png/comparator.png",
+            "tags": [
+                "block",
+                "vanilla",
+                "red"
+            ]
+        }, {
+            "name": "Arrow",
+            "defCountCost": 1,
+            "defCost": 20,
+            "image": "/data/images/items/16x/arrow.png",
+            "tags": [
+                "item",
+                "vanilla",
+                "tool"
+            ]
+        }, {
+            "name": "Flint & Steel",
+            "defCountCost": 1,
+            "defCost": 20,
+            "image": "/data/images/items/16x/flint_steel.png",
+            "tags": [
+                "item",
+                "vanilla",
+                "tool"
+            ]
+        },
+
+        {
+            "name": "Random Coordinates Panel",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/random_coord.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ]
+        },
+        {
+            "name": "Player Locater",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/locator.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ]
+        },
+        {
+            "name": "TARDIS Command Pannel",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/command_panel.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ]
+        },
+        {
+            "name": "Stats Display",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/tardis_display.png",
+            "tags": [
+                "block",
+                "dm",
+                "decor"
+            ]
+        },
+        {
+            "name": "Chameleon Ciruit Panel",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/chameleon_panel.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ]
+        },
+        {
+            "name": "TARDIS Fuel Bank",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/fuelbank.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ]
+        },
+        {
+            "name": "Sonic Charger",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/sonic_charger.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ]
+        },
+        {
+            "name": "Forcefield Panel",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/forcefield_panel.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ]
+        },
+        {
+            "name": "Flight Panel",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/flight_panel.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ]
+        },
+        {
+            "name": "Copper Gramophone",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/gramophone.png",
+            "tags": [
+                "block",
+                "dm",
+                "control",
+                "decor"
+            ]
+        },
+        {
+            "name": "Handbrake",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/handbrake_default.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/16x/handbrake_default.png",
+                    "variantName": "Default Handbrake"
+                },
+                {
+                    "image": "/data/images/items/16x/handbrake_crystaline.png",
+                    "variantName": "Crystaline Handbrake"
+                },
+                {
+                    "image": "/data/images/items/16x/lever.png",
+                    "variantName": "Lever Handbrake"
+                },
+                {
+                    "image": "/data/images/items/16x/handbrake_toyota_lever.png",
+                    "variantName": "Toyota Lever"
+                },
+                {
+                    "image": "/data/images/items/16x/handbrake_toyota.png",
+                    "variantName": "Toyota Handbrake"
+                },
+                {
+                    "image": "/data/images/items/16x/handbrake_copper.png",
+                    "variantName": "Copper Handbrake"
+                },
+                {
+                    "image": "/data/images/items/16x/handbrake_coral_lever.png",
+                    "variantName": "Coral Lever"
+                },
+                {
+                    "image": "/data/images/items/16x/handbrake_coral.png",
+                    "variantName": "Coral Handbrake"
+                },
+                {
+                    "image": "/data/images/items/16x/panel_chronotis.png",
+                    "variantName": "Chronotis Console"
+                },
+                {
+                    "image": "/data/images/items/16x/panel_sb129.png",
+                    "variantName": "SB-129 Control Panel"
+                }
+            ]
+        },
+        {
+            "name": "TARDIS Monitor",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/monitor_dalekmod.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/16x/monitor_dalekmod.png",
+                    "variantName": "Dalek Mod Monitor"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_hudolin.png",
+                    "variantName": "Hudolin Monitor"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_hudolin_wall.png",
+                    "variantName": "Hudolin Wall Monitor"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_classic.png",
+                    "variantName": "Classic Monitor"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_toyota.png",
+                    "variantName": "Toyota Monitor"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_toyota_panel.png",
+                    "variantName": "Toyota Monitor Panel"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_copper_orange.png",
+                    "variantName": "Copper Monitor (Orange)"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_copper_brown.png",
+                    "variantName": "Copper Monitor (Brown)"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_coral_big.png",
+                    "variantName": "Coral Monitor (Big)"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_coral_small.png",
+                    "variantName": "Coral Monitor (Small)"
+                },
+                {
+                    "image": "/data/images/items/16x/monitor_brachacki.png",
+                    "variantName": "Brachacki Scanner"
+                },
+                {
+                    "image": "/data/images/items/16x/panel_chronotis.png",
+                    "variantName": "Chronotis Console"
+                },
+                {
+                    "image": "/data/images/items/16x/panel_sb129.png",
+                    "variantName": "SB-129 Control Panel"
+                }
+            ]
+        },
+        {
+            "name": "Door Panel",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/door_panel_all.gif",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ],
+            "variants": [{
+                    "image": "/data/images/items/16x/door_panel_toyota_left.png",
+                    "variantName": "Toyota Front Panel (Left)"
+                },
+                {
+                    "image": "/data/images/items/16x/door_panel_copper_switch.png",
+                    "variantName": "Copper Switch Panel"
+                },
+                {
+                    "image": "/data/images/items/16x/door_panel_light_coral.png",
+                    "variantName": "Light Coral Panel"
+                },
+                {
+                    "image": "/data/images/items/16x/door_panel_brachacki_back.png",
+                    "variantName": "Brachacki Back Panel"
+                }
+            ]
+        },
+        {
+            "name": "Door Lock Panel",
+            "defCountCost": 1,
+            "defCost": 75,
+            "image": "/data/images/items/16x/lock_toyota_right.png",
+            "tags": [
+                "block",
+                "dm",
+                "control"
+            ],
+            "variants": [{
+                "image": "/data/images/items/16x/lock_toyota_right.png",
+                "variantName": "Toyota Front Panel (Right)"
+            }]
+        }
+    ],
+    "Tags": [{
+            "name": "Decorational",
+            "id": "decor"
+        },
+        {
+            "name": "Dimensional",
+            "id": "dim"
+        },
+        {
+            "name": "Entites",
+            "id": "ent"
+        },
+        {
+            "name": "Food",
+            "id": "food"
+        },
+        {
+            "name": "Mob Drops",
+            "id": "drop"
+        },
+        {
+            "name": "Music",
+            "id": "disc"
+        },
+        {
+            "name": "Ores",
+            "id": "ore"
+        },
+        {
+            "name": "Plants",
+            "id": "plant"
+        },
+        {
+            "name": "Redstone",
+            "id": "red"
+        },
+        {
+            "name": "Tools",
+            "id": "tool"
+        },
+        {
+            "name": "TARDIS Controls",
+            "id": "control"
+        },
+        {
+            "name": "Christmas",
+            "id": "xmas"
+        }
+    ],
+    "MenuPages": [{
+            "displayName": "Apply",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLSdmEgt4Hp9IC0Nql1UoMHUAPBYgn7q8y4VM0NEbOdgzSdOXcQ/viewform?usp=sf_link"
+        },
+        {
+            "displayName": "Suggest",
+            "url": "/suggest"
+        },
+        {
+            "displayName": "Supply Us!",
+            "url": "/supply"
+        },
+        {
+            "displayName": "Employees",
+            "url": "/employees"
+        }
+    ],
+    "DeliveryTypes": [{
+            "name": "Designated Chest",
+            "desc": "When delivered, FlexCrop will find or place a chest for your items.",
+            "image": "/data/images/delivery/+16x/png/chest.png",
+            "formula": "( Stacks / 27 ) * $2",
+            "location": true
+        },
+        {
+            "name": "Inventory",
+            "desc": "FlexCrop will place items in your inventory if there is space. <b>This has a chance of removing all armour you are wearing at the time of delivery.</b>",
+            "image": "/data/images/delivery/16x/inventory.png",
+            "formula": "Stacks * $20",
+            "giftBlock": true,
+            "disabled": true
+        },
+        {
+            "name": "Ender Chest",
+            "desc": "FlexCrop will place items in your ender chest if there is space. <b>This has a chance of removing all armour you are wearing at the time of delivery.</b>  ",
+            "image": "/data/images/delivery/+16x/png/enderchest.png",
+            "formula": "Stacks * $20",
+            "giftBlock": true,
+            "disabled": true
+        },
+        {
+            "name": "Safe",
+            "desc": "When delivered, FlexCrop will find or place a safe with you as the owner or the gift reciever for your items.",
+            "image": "/data/images/delivery/+16x/png/safe.png",
+            "formula": "( Stacks / 27 ) * $15",
+            "location": true
+        },
+        {
+            "name": "Present",
+            "desc": "FlexCrop will place a Dalek Mod present with the items you ordered inside. Will not work with items that spawn others, like cars.",
+            "image": "/data/images/delivery/+16x/png/present.png",
+            "formula": "Items * $50",
+            "location": true
+        },
+        {
+            "name": "Entity Only",
+            "desc": "This delivery type is for if you <b>only</b> have entities",
+            "image": "/data/images/delivery/+16x/png/entity.png",
+            "formula": "Free",
+            "location": true
+        }
+    ],
+    "Bot": {
+        "channels": {
+            "suggestions": "779037617227825224",
+            "onlineOrders": "778805138453299230",
+            "orderLog": "778805165141917726",
+            "botUsage": "778805242841137162",
+            "announcements": "778804367737618465",
+            "leave-join": "778806066820677642",
+            "supply": "833065881683886101",
+            "admin": "825070295152066600"
+        },
+        "servers": {
+            "flexcrop": "778804367737618462"
+        },
+        "users": {
+            "admins": [
+                "566630859772526627",
+                "579747291116601437"
+            ]
+        },
+        "defaultEmployee": {
+            "orders": 0,
+            "unpaid": 0,
+            "username": "",
+            "eotm": false,
+            "money": {
+                "overall": 0,
+                "month": 0,
+                "past_ten": 0,
+                "month_pays": 0
+            }
+        },
+        "prefix": "!"
+    },
+    "SiteInfo": {
+        "warning": "It is discouraged to order from FlexCrop until 1.16. Once out, all 1.12 orders will be cancelled.",
+        "message": ""
+    }
+}

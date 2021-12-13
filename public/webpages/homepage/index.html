@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FlexCrop Online</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="/webpages/shared/shared.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script data-ad-client="ca-pub-7608664669993574" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/data/images/other/favicon-stuff/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/data/images/other/favicon-stuff/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/data/images/other/favicon-stuff/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/data/images/other/favicon-stuff/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/data/images/other/favicon-stuff/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/data/images/other/favicon-stuff/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/data/images/other/favicon-stuff/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/data/images/other/favicon-stuff/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/data/images/other/favicon-stuff/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/data/images/other/favicon-stuff/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/data/images/other/favicon-stuff/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/data/images/other/favicon-stuff/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/data/images/other/favicon-stuff/favicon-16x16.png">
+    <link rel="manifest" href="/data/images/other/favicon-stuff/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/data/images/other/favicon-stuff/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FlexCrop Online" />
+    <meta property="og:description" content="Over 150 items to buy!" />
+    <meta property="og:image" content="/data/images/other/logoShort.png" />
+</head>
+
+<body onload="addJSON(['MenuPages', 'Notifications', 'Items', 'Tags']);cartSync();checkDebt();resetCookie();">
+    <nav>
+        <section class="nav-top">
+            <div class="menu-logo-search-cart">
+                <a class="hamburger-menu" mobile onclick="showOverlays(['.shadow-overlay','.menu-overlay'])">
+                    <span class="material-icons-round md-36 md-light">menu</span>
+                </a>
+                <img class="logo" src="/data/images/other/main_logo/logo.png" alt="logo" onclick="homePageRedirect(this)">
+                <div class="search-desktop" desktop>
+                    <span class="material-icons md-36">search</span>
+                    <input placeholder="Search..." onkeyup="mobileDesktopSync(false);filter('search')">
+                </div>
+                <a class="cart_button" onclick="showOverlays(['.shadow-overlay','.cart-overlay'])">
+                    <span class="material-icons-outlined md-36 md-light">shopping_cart</span>
+                </a>
+            </div>
+        </section>
+        <section class="nav-mid">
+            <div class="search" mobile>
+                <span class="material-icons md-36">search</span>
+                <input class="searchbar" placeholder="Search..." onkeyup="mobileDesktopSync(true);filter('search')">
+            </div>
+            <div class="menu-container menu" desktop></div>
+        </section>
+        <section class="nav-bottom">
+            <div class="categories-sorting">
+                <div class="categories" mobile>
+                    <ul class="categories" onclick="filter('tags')">
+                        <li name="block/item">
+                            <button class="category-buttons-mobile" onclick="categoryButtonsMobilePopup(this)">
+                                <span>Block / Items</span>
+                                <span class="category-chevron chevron chevron-down"></span>
+                            </button>
+                            <div class="category-buttons" category-buttons-hide>
+                                <input type="radio" id="mobile-radio-block" name="block/item" onclick="checkRadio(this)">
+                                <label for="mobile-radio-block">Blocks</label>
+                                <input type="radio" id="mobile-radio-item" name="block/item" onclick="checkRadio(this)">
+                                <label for="mobile-radio-item">Items</label>
+                                <input type="radio" class="null-radio" name="block/item" hidden>
+                            </div>
+                        </li>
+                        <li name="vanilla/dm">
+                            <button class="category-buttons-mobile" onclick="categoryButtonsMobilePopup(this)">
+                                <span>Vanilla / DM</span>
+                                <span class="category-chevron chevron chevron-down"></span>
+                            </button>
+                            <div class="category-buttons" category-buttons-hide>
+                                <input type="radio" id="mobile-radio-vanilla" name="vanilla/dm" onclick="checkRadio(this)">
+                                <label for="mobile-radio-vanilla">Vanilla</label>
+                                <input type="radio" id="mobile-radio-dm" name="vanilla/dm" onclick="checkRadio(this)">
+                                <label for="mobile-radio-dm">Dalek Mod</label>
+                                <input type="radio" class="null-radio" name="block/item" hidden>
+                            </div>
+                        </li>
+                        <li name="tags">
+                            <button class="category-buttons-mobile" onclick="categoryButtonsMobilePopup(this)">
+                                <span>Tags</span>
+                                <span class="category-chevron chevron chevron-down"></span>
+                            </button>
+                            <div id="mobile-tags-container" class="category-buttons" category-buttons-hide>
+                                <input type="radio" class="null-radio" name="block/item" hidden>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sorting">
+                    <select onchange="sortList(this.selectedOptions[0].getAttribute('shortHand'))">
+                        <option shortHand="alphabetical">Alphabetical</option>
+                        <option shortHand="highToLow">Price High to Low</option>
+                        <option shortHand="lowToHigh">Price Low to High</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </nav>
+    <main>
+        <section class="section-left" desktop>
+            <div class="categories" onclick="filter('tags')">
+                <section name="block/item">
+                    <p>Block / Items</p>
+                    <input type="radio" id="desktop-radio-block" name="block/item" onclick="checkRadio(this)">
+                    <label for="desktop-radio-block">Blocks</label>
+                    <br />
+                    <input type="radio" id="desktop-radio-item" name="block/item" onclick="checkRadio(this)">
+                    <label for="desktop-radio-item">Items</label>
+                    <br />
+                    <input type="radio" class="null-radio" name="block/item" hidden>
+                </section>
+                <section name="vanilla/dm">
+                    <p>Vanilla / DM</p>
+                    <input type="radio" id="desktop-radio-vanilla" name="vanilla/dm" onclick="checkRadio(this)">
+                    <label for="desktop-radio-vanilla">Vanilla</label>
+                    <br />
+                    <input type="radio" id="desktop-radio-dm" name="vanilla/dm" onclick="checkRadio(this)">
+                    <label for="desktop-radio-dm">Dalek Mod</label>
+                    <br />
+                    <input type="radio" class="null-radio" name="vanilla/dm" hidden>
+                </section>
+                <section id="desktop-tags-container" name="tags">
+                    <p>Tags</p>
+                    <input type="radio" class="null-radio" name="tags" hidden>
+                </section>
+                <section class="ads">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- FlexCrop-Desktop-SectionLeft -->
+                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7608664669993574" data-ad-slot="7952065800" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </section>
+            </div>
+        </section>
+        <section class="section-main">
+            <div id="messages"></div>
+            <div>
+                <ul class="items"></ul>
+            </div>
+        </section>
+        <section class="section-bottom">
+            <footer>
+                <a name="copyright">Copyright © 2021 Bug1312</a>
+                <a name="terms" href="/terms">Terms</a>
+                <a name="discord" href="https://discord.com/invite/vwwaxuvhT4">Discord</a>
+            </footer>
+        </section>
+    </main>
+    <overlay>
+        <div class="shadow-overlay" onclick="hideOverlays(['.shadow-overlay','.cart-overlay','.menu-overlay','.popup-overlay'])"></div>
+        <div class="popup-overlay" hidden>
+            <h2 id="popup-title"></h2>
+            <span id="popup-cancel" class="material-icons-round" onclick="hideOverlays(['.shadow-overlay','.popup-overlay'])">clear</span>
+            <img id="popup-image" alt="loading...">
+            <p id="popup-cost" costCalc="0"></p>
+            <input type="number" id="popup-amount" autocomplete='off' placeholder="Amount..." min="1" onchange="updatePopupPrice(this.value,document.getElementById('popup-cost'))" onkeyup="updatePopupPrice(this.value,document.getElementById('popup-cost'))" onkeydown="updatePopupPrice(this.value,document.getElementById('popup-cost'))">
+            <select id="popup-type" onchange="updateVariant()"></select>
+            <input id="popup-rename" autocomplete='off' placeholder="Rename in Anvil... [ Optional ]">
+            <p id="popup-warning"></p>
+            <button id="popup-confirm" onclick="popupConfirm()">Add to Cart</button>
+        </div>
+        <div class="menu-container menu-overlay" mobile>
+            <div class="mobile-menu-header">
+                <h3>FlexCrop Menu</h3>
+                <span class="material-icons-round" onclick="hideOverlays(['.shadow-overlay','.menu-overlay'])">clear</span>
+            </div>
+            <div class="mobile-menu-links"></div>
+        </div>
+        <div class="cart-overlay">
+            <div class="cart-header">
+                <h3>FlexCrop Cart</h3>
+                <span class="material-icons-round" onclick="hideOverlays(['.shadow-overlay','.cart-overlay'])">clear</span>
+            </div>
+            <div class="cart-items-container" desktop-no-scroll>
+                <ul class="cart-items"></ul>
+            </div>
+            <div class="cart-footer">
+                <button name="checkout" onclick="window.location='/checkout'">Checkout</button>
+            </div>
+        </div>
+    </overlay>
+</body>
+
+<script async src="//cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
+<script src="/webpages/shared/shared.js" type="text/javascript"></script>
+<script src="/webpages/homepage/homepage.js" type="text/javascript"></script>
+<link href="/webpages/homepage/homepage.css" rel="stylesheet">
+
+</html>
