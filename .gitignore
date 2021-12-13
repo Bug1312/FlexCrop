@@ -6,11 +6,6 @@ node_modules/
 # Secrets
 .env
 
-# Database Stuff
-database/*
-!database/data_leaderboard
-!database/data_maintenance
-
 # Developer Bloat
 public/data/images/delivery/+16x/webp
 public/data/images/items/+16x/webp
