@@ -3,6 +3,7 @@ const express = require("express"),
     bodyParser = require("body-parser"),
     Database = require("fs-database"),
     db = new Database(__dirname + "/../database/flexcrop"),
+    // db = new Database(), // Use this for development
     dataJSON = require(__dirname + "/public/data/data.json"),
     Discord = require("discord.js"),
     bot = new Discord.Client(),
@@ -101,9 +102,7 @@ const runBot = true,
     });
 
     app.get("/apply", (request, response) => {
-        checkBan(request, response, () => {
-            response.sendFile(__dirname + "/public/webpages/apply/index.html")
-        });
+        response.sendFile(__dirname + "/public/webpages/apply/index.html")
     });
 
     app.get("/checkout", (request, response) => {
@@ -112,18 +111,17 @@ const runBot = true,
         });
     });
 
+    app.get("/economy", (request, response) => {
+        response.sendFile(__dirname + "/public/webpages/economy/index.html")
+
+    });
+
     app.get("/terms", (request, response) => {
         response.sendFile(__dirname + "/public/webpages/terms/index.html")
     });
 
     app.get("/reload", (request, response) => {
         response.sendFile(__dirname + "/public/webpages/reload/index.html")
-    });
-
-    app.get("/supply", (request, response) => {
-        checkBan(request, response, () => {
-            response.sendFile(__dirname + "/public/webpages/supply/index.html")
-        });
     });
 
     app.get("/employees", (request, response) => {

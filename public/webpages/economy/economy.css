@@ -1,0 +1,102 @@
+body {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "nav""main";
+    grid-template-rows: 48px auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    background-color: rgb(230, 230, 230);
+}
+
+main {
+    height: calc(100vh - 48px);
+    width: 100vw;
+    grid-area: main;
+    overflow-y: auto;
+    display: grid;
+    grid-template-areas: "main-content""footer";
+    grid-template-rows: auto 114px;
+    text-align: center;
+}
+
+.nav-mid {
+    display: none;
+}
+
+.main_para {
+    width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.item_table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.item_table img {
+    padding: 0 10px;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.item_table p {
+    width: min-content;
+    margin: 2px auto;
+}
+
+.item_table td:nth-child(1) {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    padding: 5px;
+}
+
+#table_body>tr>td:nth-child(2)::before {
+    content: "$";
+}
+
+#table_body>tr>td:nth-child(2)::after {
+    content: "FCS";
+}
+
+.item_table,
+.item_table th,
+.item_table td,
+.item_table tr {
+    padding: 0 20px;
+    border: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-mid {
+        display: block;
+        height: 47px;
+        background-color: #232f3e;
+        padding-top: 6px;
+    }
+
+    main {
+        grid-template-rows: auto 48px;
+    }
+
+    main>*:first-child {
+        margin-top: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .item_table,
+    .main_para {
+        width: 30%;
+    }
+}

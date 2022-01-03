@@ -201,6 +201,10 @@ form {
     content: "Subtotal : $";
 }
 
+.side-summary-total p::after {
+    content: "FCS";
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -241,6 +245,10 @@ form {
     content: "$";
 }
 
+.item-total::after {
+    content: "FCS";
+}
+
 #recap:not([hidden]) {
     display: flex;
     justify-content: center;
@@ -253,12 +261,15 @@ form {
 }
 
 .summary-total p {
-    display: flex;
     justify-content: center;
 }
 
 .summary-total p::before {
     content: "Total : $";
+}
+
+.summary-total p::after {
+    content: "FCS";
 }
 
 .summary {
@@ -292,16 +303,20 @@ form {
         background-color: #232f3e;
         padding-top: 6px;
     }
+
     main {
         grid-template-rows: auto 48px;
         height: calc(100vh - 101px);
     }
+
     body {
         grid-template-rows: 101px auto;
     }
+
     .side-summary {
         display: block;
     }
+
     .delivery-form {
         width: 60%;
         max-width: 720px;
