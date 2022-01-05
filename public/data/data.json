@@ -2327,7 +2327,7 @@
         "defCountCost": 1,
         "defCost": 2,
         "stack": 1,
-
+        "disabled": true,
         "tags": ["item", "dm"]
     }, {
         "name": "Storage Vault",

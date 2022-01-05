@@ -1,9 +1,10 @@
 const Discord = require("discord.js"),
     bot = new Discord.Client(),
     Database = require("fs-database"),
-    db = new Database(),
-    dataJSON = require('./public/data/data.json'),
-    botJSON = dataJSON['Bot'],
+    db = new Database(__dirname + "/../../database/flexcrop"),
+    // db = new Database(), // Use this for development
+    dataJSON = require("./public/data/data.json"),
+    botJSON = dataJSON["Bot"],
     serverUtils = require("minecraft-server-util");
 require('dotenv').config();
 

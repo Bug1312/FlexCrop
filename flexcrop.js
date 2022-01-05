@@ -46,8 +46,8 @@ const runBot = true,
     if (runWebsite) {
         try {
             const httpsCertOptions = {
-                key: fs.readFileSync('/cert/com/bug1312/private.key.pem'),
-                cert: fs.readFileSync('/cert/com/bug1312/domain.cert.pem')
+                key: fs.readFileSync('/cert/net/flexcrop/private.key.pem'),
+                cert: fs.readFileSync('/cert/net/flexcrop/domain.cert.pem')
             }
             https.createServer(httpsCertOptions, app).listen(process.env.PORT, function() {
                 console.log(`HTTPS RUNNING`);
