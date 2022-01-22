@@ -33,6 +33,7 @@ class API {
         app.use(express.urlencoded({
             extended: true
         }));
+        app.use(cors());
 
         try {
             if (this.cert == null) return ErrorEvent;
