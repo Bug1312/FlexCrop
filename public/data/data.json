@@ -855,7 +855,7 @@
         "name": "Netherite Scrap",
         "image": "/data/images/items/16x/netherite_scrap.png",
         "defCountCost": 1,
-        "defCost": 70,
+        "defCost": 200,
         "tags": ["item", "vanilla", "dim", "ore"],
         "purchaseLimit": 10
     }, {
@@ -2450,18 +2450,6 @@
         "formula": "Stacks * $20",
         "giftBlock": true,
         "disabled": true
-    }, {
-        "name": "Safe",
-        "desc": "When delivered, FlexCrop will find or place a safe with you as the owner or the gift reciever for your items.",
-        "image": "/data/images/delivery/+16x/safe.png",
-        "formula": "( Stacks / 27 ) * $15",
-        "location": true
-    }, {
-        "name": "Present",
-        "desc": "FlexCrop will place a Dalek Mod present with the items you ordered inside. Will not work with items that spawn others, like cars.",
-        "image": "/data/images/delivery/+16x/present.png",
-        "formula": "Items * $50",
-        "location": true
     }, {
         "name": "Entity Only",
         "desc": "This delivery type is for if you <b>only</b> have entities",

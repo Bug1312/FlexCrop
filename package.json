@@ -1,9 +1,9 @@
 {
     "name": "flexcrop-site",
     "description": "Website for DMU shop: FlexCrop",
-    "main": "flexcrop.js",
+    "main": "server.js",
     "scripts": {
-        "start": "node flexcrop.js"
+        "start": "node server.js"
     },
     "devDependencies": {
         "@fingerprintjs/fingerprintjs": "^3.1.2",
