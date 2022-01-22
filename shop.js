@@ -19,7 +19,7 @@ class ShopSite {
         this.runBot = false;
         this.runSite = false;
         this.database = new Database();
-        this.port = 8000;
+        this.port = 8001;
         this.userClear = 1000 * 60 * 60; // 1000 milliseconds - 1 second => 60 seconds - 1 minute => 60 minutes
         this.cert;
 
@@ -113,10 +113,7 @@ class ShopSite {
 
         app.get("/suggest", (request, response) => {
             checkInfo(database, request, response, () => {
-                if (maintenanceBool && !request.cookies[process.env.MAINTENANCE_USER]) {
-                    response.send('Currently down for maintenance, come again later')
-                } else
-                    response.sendFile(__dirname + "/public/webpages/suggestion/index.html")
+                response.sendFile(__dirname + "/public/webpages/suggestion/index.html")
             });
         });
 
@@ -298,7 +295,7 @@ class ShopSite {
 
 function checkInfo(database, request, response, callback = new Function(), stopBans = true, stopMaintenance = true) {
     database.get('data_maintenance').then(maintenanceBool => {
-        if (maintenanceBool == undefined) database.set('data_maintenance', 'false');
+        if (maintenanceBool == undefined) database.set('data_maintenance', false);
 
         database.get(`user_${request.cookies._ufp}`).then(user => {
             if (stopBans && !(user.banned == undefined || user.banned.length == 0)) {

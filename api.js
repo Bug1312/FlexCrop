@@ -9,7 +9,7 @@ class API {
     constructor(options = {}) {
         // Defaults
         this.name = "API";
-        this.port = 8001;
+        this.port = 8000;
         this.corsOptions = {
             origin: ["*"]
         }
