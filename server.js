@@ -52,7 +52,7 @@ new ShopSite({
     runBot: true,
     runSite: true,
     database: new Database('/databases/flexcrop'),
-    certs: {
+    cert: {
         key: fs.readFileSync('/cert/net/flexcrop/private.key.pem'),
         cert: fs.readFileSync('/cert/net/flexcrop/domain.cert.pem')
     }
