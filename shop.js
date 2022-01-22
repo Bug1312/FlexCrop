@@ -112,12 +112,12 @@ class ShopSite {
         });
 
         app.get("/suggest", (request, response) => {
-            database.get('data_maintenance').then(maintenanceBool => {
+            checkInfo(database, request, response, () => {
                 if (maintenanceBool && !request.cookies[process.env.MAINTENANCE_USER]) {
                     response.send('Currently down for maintenance, come again later')
                 } else
                     response.sendFile(__dirname + "/public/webpages/suggestion/index.html")
-            })
+            });
         });
 
         app.get("/apply", (request, response) => {
@@ -125,13 +125,13 @@ class ShopSite {
         });
 
         app.get("/checkout", (request, response) => {
-
-            response.sendFile(__dirname + "/public/webpages/checkout/index.html")
+            checkInfo(database, request, response, () => {
+                response.sendFile(__dirname + "/public/webpages/checkout/index.html")
+            });
         });
 
         app.get("/economy", (request, response) => {
             response.sendFile(__dirname + "/public/webpages/economy/index.html")
-
         });
 
         app.get("/terms", (request, response) => {
@@ -151,54 +151,58 @@ class ShopSite {
         let database = this.database;
 
         app.post("/fetch-suggest", function(request, response) {
-            bot.channels.cache.get(dataJSON['Bot']['channels']['suggestions']).send(formatMessage('suggestion', {
-                uuid: request.body.id,
-                user: request.body.username,
-                suggestion: request.body.suggestion
-            }));
-            editUser(database, request.cookies._ufp, 'suggestions', request.body.id);
+            checkInfo(database, request, response, () => {
+                bot.channels.cache.get(dataJSON['Bot']['channels']['suggestions']).send(formatMessage('suggestion', {
+                    uuid: request.body.id,
+                    user: request.body.username,
+                    suggestion: request.body.suggestion
+                }));
+                editUser(database, request.cookies._ufp, 'suggestions', request.body.id);
+            });
         });
 
         app.post("/fetch-order", function(request, response) {
-            if (validateOrder(request.body)) {
-                let items = [];
-                Object.keys(request.body).filter(key => key.includes('item_')).forEach(item => {
-                    let orderItem = JSON.parse(request.body[item]);
-                    items.push({
-                        item: orderItem.item,
-                        variant: orderItem.variant,
-                        amount: orderItem.amount
-                    });
-                });
-                if (items.length)
-                    bot.channels.cache.get(dataJSON['Bot']['channels']['onlineOrders']).send(createOrder(request.body)).then(msg => {
-                        database.set(`order_${JSON.parse(request.body.form).id}`, {
-                            username: request.cookies.username,
-                            location: msg.id,
-                            items: items,
-                            cost: parseCost(request.body),
-                            print: request.cookies._ufp
+            checkInfo(database, request, response, () => {
+                if (validateOrder(request.body)) {
+                    let items = [];
+                    Object.keys(request.body).filter(key => key.includes('item_')).forEach(item => {
+                        let orderItem = JSON.parse(request.body[item]);
+                        items.push({
+                            item: orderItem.item,
+                            variant: orderItem.variant,
+                            amount: orderItem.amount
                         });
-                        response.send([1]);
                     });
-            } else {
-                editUser(database, request.cookies._ufp, "banned", "An order you made has been flagged as 'suspicious' and will not be completed. If you think this is a mistake, contact FlexCrop's Web Administrator(s)")
-                response.send([2]);
-                bot.channels.cache.get(dataJSON['Bot']['channels']['admin']).send(`\`\`\`json\n${JSON.stringify(request.body)}\`\`\``);
-            };
-            setTimeout(() => {
-                editUser(database, request.cookies._ufp, 'orders', JSON.parse(request.body.form).id)
-            }, 20);
+                    if (items.length)
+                        bot.channels.cache.get(dataJSON['Bot']['channels']['onlineOrders']).send(createOrder(request.body)).then(msg => {
+                            database.set(`order_${JSON.parse(request.body.form).id}`, {
+                                username: request.cookies.username,
+                                location: msg.id,
+                                items: items,
+                                cost: parseCost(request.body),
+                                print: request.cookies._ufp
+                            });
+                            response.send([1]);
+                        });
+                } else {
+                    editUser(database, request.cookies._ufp, "banned", "An order you made has been flagged as 'suspicious' and will not be completed. If you think this is a mistake, contact FlexCrop's Web Administrator(s)")
+                    response.send([2]);
+                    bot.channels.cache.get(dataJSON['Bot']['channels']['admin']).send(`\`\`\`json\n${JSON.stringify(request.body)}\`\`\``);
+                };
+                setTimeout(() => {
+                    editUser(database, request.cookies._ufp, 'orders', JSON.parse(request.body.form).id)
+                }, 20);
 
-            database.get('data_usernameUpdate').then(value => {
-                if (!value) value = [];
-                let index = value.findIndex(usernames =>
-                    usernames.newName == JSON.parse(request.body.form).username
-                );
-                if (index != -1)
-                    value.splice(index, 1);
-                database.set('data_usernameUpdate', value);
-            })
+                database.get('data_usernameUpdate').then(value => {
+                    if (!value) value = [];
+                    let index = value.findIndex(usernames =>
+                        usernames.newName == JSON.parse(request.body.form).username
+                    );
+                    if (index != -1)
+                        value.splice(index, 1);
+                    database.set('data_usernameUpdate', value);
+                })
+            });
         });
     }
 
