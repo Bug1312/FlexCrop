@@ -50,18 +50,18 @@ const ShopSite = require(__dirname + "/shop.js"),
 new ShopSite({
     port: 13001,
     runBot: true,
-    runSite: true //,
-    // database: new Database('/databases/flexcrop'),
-    // certs: {
-    //     key: fs.readFileSync('/cert/net/flexcrop/private.key.pem'),
-    //     cert: fs.readFileSync('/cert/net/flexcrop/domain.cert.pem')
-    // }
+    runSite: true,
+    database: new Database('/databases/flexcrop'),
+    certs: {
+        key: fs.readFileSync('/cert/net/flexcrop/private.key.pem'),
+        cert: fs.readFileSync('/cert/net/flexcrop/domain.cert.pem')
+    }
 }).run();
 
 new API({
-    port: 13000 //,
-    // cert: {
-    //     key: fs.readFileSync('/cert/net/flexcrop/private.key.pem'),
-    //     cert: fs.readFileSync('/cert/net/flexcrop/domain.cert.pem')
-    // }
+    port: 13000,
+    cert: {
+        key: fs.readFileSync('/cert/net/flexcrop/private.key.pem'),
+        cert: fs.readFileSync('/cert/net/flexcrop/domain.cert.pem')
+    }
 }).run();
