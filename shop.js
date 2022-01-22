@@ -19,8 +19,7 @@ class ShopSite {
         this.runBot = false;
         this.runSite = false;
         this.database = new Database();
-
-        this.port = 80;
+        this.port = 8000;
         this.userClear = 1000 * 60 * 60; // 1000 milliseconds - 1 second => 60 seconds - 1 minute => 60 minutes
         this.cert;
 
@@ -36,7 +35,9 @@ class ShopSite {
         Object.keys(options).forEach(key => {
             this[key] = options[key];
         });
+    }
 
+    run() {
         if (this.runSite) this.#runSite();
         if (this.runBot) this.#runBot();
         if (this.runBot && this.runSite) this.#runBoth();

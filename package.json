@@ -16,7 +16,8 @@
         "express-minify": "^1.0.0",
         "fs-database": "^1.0.2",
         "minecraft-server-util": "^3.5.1",
-        "uglify-js": "^3.14.1"
+        "uglify-js": "^3.14.1",
+        "cors": "^2.8.5"
     },
     "license": "MIT",
     "author": "Bug1312"
