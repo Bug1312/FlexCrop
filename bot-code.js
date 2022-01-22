@@ -53,95 +53,6 @@ class ShopBot {
             */
         });
 
-        // Helper Functions 
-        {
-            function completeOrder(orderID, employeeID, remove = false, employeeDebt = false) {
-                overall.database.get(`order_${orderID}`).then(order => {
-                    if (order.location == undefined || order.location == 'undefined')
-                        bot.channels.cache.get(botJSON['channels']['admin']).send(`${orderID} had an undefined location`);
-                    bot.channels.cache.get(botJSON['channels']['orderLog']).send(formatMessage('log', {
-                        id: orderID,
-                        msgID: order.location,
-                        action: remove ? 'Removed' : 'Completed',
-                        employee: `<@!${bot.users.cache.get(employeeID).id}>`,
-                        debtor: (employeeDebt || remove) ? `<@!${bot.users.cache.get(employeeID).id}>` : order.username
-                    }));
-                    bot.channels.cache.get(botJSON['channels']['onlineOrders']).messages.fetch({
-                        around: order.location,
-                        limit: 1
-                    }).then(msgs => {
-                        if (remove) {
-                            msgs.first().react('❌')
-                        } else {
-                            msgs.first().react('✅')
-                        };
-                    });
-                }).then(() => {
-                    overall.database.get(`order_${orderID}`).then(order => {
-                        overall.database.get(`employee_${employeeID}`).then(employee => {
-                            if (!remove) {
-                                employee.orders++;
-                                employee.money.overall += order.cost;
-                                employee.money.month += order.cost;
-                                employee.money.past_ten += order.cost;
-                                if (employee.orders % 10 == 0) {
-                                    if (!employee.dont_pay) {
-                                        let wage = (employee.eotm) ? 13000 : 10000
-                                        employee.unpaid += Math.ceil(wage + ((employee.money.past_ten > wage + 5000) ? (employee.money.past_ten - wage) * 0.2 : 0));
-                                    }
-                                    employee.money.month_pays++;
-                                    employee.money.past_ten = 0;
-                                };
-                                if (!order.prepayed)
-                                    overall.database.get('data_debt').then(debtors => {
-                                        if (!debtors) debtors = {};
-                                        if (employeeDebt) {
-                                            if (!debtors[employee.username]) {
-                                                let newDebtor = {};
-                                                newDebtor[orderID.toLowerCase()] = order.cost;
-                                                debtors[employee.username] = newDebtor;
-                                            } else {
-                                                debtors[employee.username][orderID.toLowerCase()] = order.cost;
-                                            }
-                                        } else {
-                                            if (!debtors[order.username]) {
-                                                let newDebtor = {};
-                                                newDebtor[orderID.toLowerCase()] = order.cost;
-                                                debtors[order.username] = newDebtor;
-                                            } else {
-                                                debtors[order.username][orderID.toLowerCase()] = order.cost;
-                                            }
-                                        };
-                                        overall.database.set('data_debt', debtors);
-                                    });
-                            }
-                            overall.database.set(`employee_${employeeID}`, employee);
-                            overall.database.delete(`order_${orderID}`);
-                        })
-                    })
-                });
-            };
-
-            function formatMessage(type, data = {}) {
-                switch (type) {
-                    case 'log':
-                        return `
-\`\`\`  \`\`\`Order ID : ${data.id}
-Link : ${ data.msgID ? `<https://discord.com/channels/${dataJSON['Bot']['servers']['flexcrop']}/${dataJSON['Bot']['channels']['onlineOrders']}/${data.msgID}>` : '\`UNDEFINED\`'}
-Action : ${data.action}
-Employee : ${data.employee}
-Debtor : ${data.debtor}
-\`\`\` \`\`\``;
-                    case 'payUser':
-                        return `${data.employeeID} : ${data.payments}`;
-                    case 'undoneOrder':
-                        return `${data.orderID} : <https://discord.com/channels/${dataJSON['Bot']['servers']['flexcrop']}/${dataJSON['Bot']['channels']['onlineOrders']}/${data.msgID}>`;
-                    case 'userJoin':
-                        return `<@${data.employee}>, ${data.player} is online!`;
-                };
-            };
-        }
-
         bot.on("message", message => {
             let adminBoolean = (botJSON['users']['admins'].indexOf(message.author.id) > -1) ? true : false,
                 lowercaseMsg = message.content.toLowerCase().replace(botJSON['prefix'], ''),
@@ -443,7 +354,7 @@ Debtor : ${data.debtor}
                             });
                         }).then(() => {
                             setTimeout(() => {
-                                tempArrayEmployees.sort(function(employeeOne, employeeTwo) {
+                                tempArrayEmployees.sort((employeeOne, employeeTwo) => {
                                     if (employeeOne.score > employeeTwo.score) return -1;
                                     if (employeeOne.score < employeeTwo.score) return 1;
                                     return 0;
@@ -602,5 +513,91 @@ Debtor : ${data.debtor}
 
     }
 }
+
+function completeOrder(orderID, employeeID, remove = false, employeeDebt = false) {
+    overall.database.get(`order_${orderID}`).then(order => {
+        if (order.location == undefined || order.location == 'undefined')
+            bot.channels.cache.get(botJSON['channels']['admin']).send(`${orderID} had an undefined location`);
+        bot.channels.cache.get(botJSON['channels']['orderLog']).send(formatMessage('log', {
+            id: orderID,
+            msgID: order.location,
+            action: remove ? 'Removed' : 'Completed',
+            employee: `<@!${bot.users.cache.get(employeeID).id}>`,
+            debtor: (employeeDebt || remove) ? `<@!${bot.users.cache.get(employeeID).id}>` : order.username
+        }));
+        bot.channels.cache.get(botJSON['channels']['onlineOrders']).messages.fetch({
+            around: order.location,
+            limit: 1
+        }).then(msgs => {
+            if (remove) {
+                msgs.first().react('❌')
+            } else {
+                msgs.first().react('✅')
+            };
+        });
+    }).then(() => {
+        overall.database.get(`order_${orderID}`).then(order => {
+            overall.database.get(`employee_${employeeID}`).then(employee => {
+                if (!remove) {
+                    employee.orders++;
+                    employee.money.overall += order.cost;
+                    employee.money.month += order.cost;
+                    employee.money.past_ten += order.cost;
+                    if (employee.orders % 10 == 0) {
+                        if (!employee.dont_pay) {
+                            let wage = (employee.eotm) ? 13000 : 10000
+                            employee.unpaid += Math.ceil(wage + ((employee.money.past_ten > wage + 5000) ? (employee.money.past_ten - wage) * 0.2 : 0));
+                        }
+                        employee.money.month_pays++;
+                        employee.money.past_ten = 0;
+                    };
+                    if (!order.prepayed)
+                        overall.database.get('data_debt').then(debtors => {
+                            if (!debtors) debtors = {};
+                            if (employeeDebt) {
+                                if (!debtors[employee.username]) {
+                                    let newDebtor = {};
+                                    newDebtor[orderID.toLowerCase()] = order.cost;
+                                    debtors[employee.username] = newDebtor;
+                                } else {
+                                    debtors[employee.username][orderID.toLowerCase()] = order.cost;
+                                }
+                            } else {
+                                if (!debtors[order.username]) {
+                                    let newDebtor = {};
+                                    newDebtor[orderID.toLowerCase()] = order.cost;
+                                    debtors[order.username] = newDebtor;
+                                } else {
+                                    debtors[order.username][orderID.toLowerCase()] = order.cost;
+                                }
+                            };
+                            overall.database.set('data_debt', debtors);
+                        });
+                }
+                overall.database.set(`employee_${employeeID}`, employee);
+                overall.database.delete(`order_${orderID}`);
+            })
+        })
+    });
+};
+
+function formatMessage(type, data = {}) {
+    switch (type) {
+        case 'log':
+            return `
+\`\`\`  \`\`\`Order ID : ${data.id}
+Link : ${ data.msgID ? `<https://discord.com/channels/${dataJSON['Bot']['servers']['flexcrop']}/${dataJSON['Bot']['channels']['onlineOrders']}/${data.msgID}>` : '\`UNDEFINED\`'}
+Action : ${data.action}
+Employee : ${data.employee}
+Debtor : ${data.debtor}
+\`\`\` \`\`\``;
+        case 'payUser':
+            return `${data.employeeID} : ${data.payments}`;
+        case 'undoneOrder':
+            return `${data.orderID} : <https://discord.com/channels/${dataJSON['Bot']['servers']['flexcrop']}/${dataJSON['Bot']['channels']['onlineOrders']}/${data.msgID}>`;
+        case 'userJoin':
+            return `<@${data.employee}>, ${data.player} is online!`;
+    };
+};
 
 module.exports = ShopBot;
