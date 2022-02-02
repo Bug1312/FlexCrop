@@ -160,7 +160,7 @@ class ShopSite {
 
         app.post("/fetch-order", function(request, response) {
             checkInfo(database, request, response, () => {
-                if (validateOrder(request.body)) {
+                if (verify(request.body)) {
                     let items = [];
                     Object.keys(request.body).filter(key => key.includes('item_')).forEach(item => {
                         let orderItem = JSON.parse(request.body[item]);
@@ -288,28 +288,41 @@ class ShopSite {
                 response.send(tempArray);
             }, 1000);
         });
+
+        app.post("/fetch-site-data", function(request, response) {
+            database.get('data_site').then(data => {
+                response.send(data);
+            })
+        });
     }
 
 
 }
 
 function checkInfo(database, request, response, callback = new Function(), stopBans = true, stopMaintenance = true) {
-    database.get('data_maintenance').then(maintenanceBool => {
-        if (maintenanceBool == undefined) database.set('data_maintenance', false);
+    database.get('data_site').then(data => {
+        if (!data) {
+            data = {
+                maintenance: false,
+                message: "",
+                warning: ""
+            }
+            database.set('data_site', data);
+        };
 
         database.get(`user_${request.cookies._ufp}`).then(user => {
             if (stopBans && !(user.banned == undefined || user.banned.length == 0)) {
                 response.sendFile(__dirname + "/public/webpages/forbidden/index.html");
                 return;
             }
-            if (stopMaintenance && maintenanceBool) {
+            if (stopMaintenance && data.maintenance) {
                 response.send("This site is currently under maintenance");
                 return;
             }
             callback();
         }).catch(err => {
             createUser(database, request.cookies._ufp);
-            if (stopMaintenance && maintenanceBool) response.send("This site is currently under maintenance");
+            if (stopMaintenance && data.maintenance) response.send("This site is currently under maintenance");
             callback();
         });
     });
@@ -354,8 +367,8 @@ function formatMessage(type, data = {}) {
     };
 };
 
-function validateOrder(order) {
-    let validated = true;
+function verify(order) {
+    let valid = true;
     Object.keys(order).forEach(key => {
         if (key.includes('item_')) {
             let orderItem = JSON.parse(order[key]),
@@ -379,17 +392,18 @@ function validateOrder(order) {
                         varCheck = true;
                     }
                     if (
+                        Math.ceil(amount) != amount ||
                         rename && item.nameLock ||
                         !varCheck ||
                         item.purchaseLimit && !(amount <= item.purchaseLimit) ||
                         item.stack != undefined && item.stack != stack
                     ) {
-                        validated = false;
+                        valid = false;
                     };
                 };
             });
             if (!itemCheck) {
-                validated = false;
+                valid = false;
             };
         };
         if (key == 'form') {
@@ -406,15 +420,15 @@ function validateOrder(order) {
                 form.id.length != 12 ||
                 !delivCheck
             ) {
-                validated = false;
+                valid = false;
             };
         };
     });
-    return validated;
+    return valid;
 };
 
 function createOrder(order) {
-    if (validateOrder(order)) {
+    if (verify(order)) {
         let form = JSON.parse(order.form),
             data = {
                 uuid: form.id,

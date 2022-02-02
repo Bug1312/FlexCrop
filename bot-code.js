@@ -128,7 +128,7 @@ class ShopBot {
                             break;
                         case 'remove':
                             if (!args[1] || !overall.database.get(`order_${args[1]}`)) {
-                                message.channel.send('You need an valid order ID to complete an order')
+                                message.channel.send('You need a valid order ID to complete an order')
                             } else {
                                 completeOrder(args[1], message.author.id, true);
                             };
@@ -148,11 +148,9 @@ class ShopBot {
                             })
                             break;
                         case 'mm':
-                            overall.database.get('data_maintenance').then(value => {
-                                if (value == false)
-                                    overall.database.set('data_maintenance', true);
-                                else
-                                    overall.database.set('data_maintenance', false);
+                            overall.database.get('data_site').then(data => {
+                                data.maintenance = !(data.maintenance);
+                                overall.database.set('data_site', data);
                             }).then(() => {
                                 message.channel.send('Maintenance Mode Toggled')
                             })
@@ -227,7 +225,7 @@ class ShopBot {
                             overall.database.get('data_debt').then(debtors => {
                                 if (!debtors) debtors = {};
                                 if (!args[1]) {
-                                    message.channel.send('You need an valid order ID');
+                                    message.channel.send('You need a valid order ID');
                                 } else {
                                     Object.keys(debtors).forEach(key => {
                                         if (debtors[key][args[1]]) {
@@ -239,7 +237,7 @@ class ShopBot {
                                         };
                                     });
                                     if (!debt) {
-                                        message.channel.send('You need an valid order ID');
+                                        message.channel.send('You need a valid order ID');
                                     } else {
                                         message.channel.send('Payment Confirmed');
                                     };
@@ -251,7 +249,7 @@ class ShopBot {
                             overall.database.get('data_debt').then(debtors => {
                                 if (!debtors) debtors = {};
                                 if (!args[1] || !Object.keys(debtors).filter(debtor => debtor.toLowerCase() == args[1])) {
-                                    message.channel.send('You need an valid username');
+                                    message.channel.send('You need a valid username');
                                 } else {
                                     delete debtors[Object.keys(debtors).filter(debtor => debtor.toLowerCase() == args[1])[0]];
                                     message.channel.send('Debt Removed');
@@ -262,7 +260,7 @@ class ShopBot {
                         case 'prepay':
                             overall.database.get(`order_${args[1]}`).then(order => {
                                 if (!order) {
-                                    message.channel.send('You need an valid order ID to prepay an order')
+                                    message.channel.send('You need a valid order ID to prepay an order')
                                 } else {
                                     order.prepayed = true;
                                     overall.database.set(`order_${args[1]}`, order);
@@ -276,6 +274,17 @@ class ShopBot {
 
                                     message.channel.send('Order prepayed');
                                 };
+                            });
+                            break;
+                        case 'msg':
+                            overall.database.get('data_site').then(data => {
+                                if (!args[1] || !(args[1] == "message" || args[1] == "msg" || args[1] == "warn" || args[1] == "warning")) message.channel.send('You need a message type');
+                                else if (args[1] == "message" || args[1] == "msg") {
+                                    data.message = originalCaseArgs[2];
+                                } else if (args[1] == "warn" || args[1] == "warning") {
+                                    data.warning = originalCaseArgs[2];
+                                }
+                                overall.database.set('data_site', data);
                             });
                             break;
                     };
@@ -306,13 +315,13 @@ class ShopBot {
                         break;
                     case 'complete':
                         if (!args[1]) {
-                            message.channel.send('You need an valid order ID to complete an order')
+                            message.channel.send('You need a valid order ID to complete an order')
                         } else {
                             overall.database.get(`order_${args[1]}`).then(order => {
                                 if (order)
                                     completeOrder(args[1], message.author.id, false, (args[2] && args[2] == 'true') ? true : false);
                                 else
-                                    message.channel.send('You need an valid order ID to complete an order')
+                                    message.channel.send('You need a valid order ID to complete an order')
                             })
                         };
                         break;
@@ -373,7 +382,7 @@ class ShopBot {
                             let debt;
                             if (!debtors) debtors = {};
                             if (!args[1]) {
-                                message.channel.send('You need an valid order ID');
+                                message.channel.send('You need a valid order ID');
                             } else {
                                 Object.keys(debtors).forEach(key => {
                                     if (debtors[key][args[1]]) {
@@ -385,7 +394,7 @@ class ShopBot {
                                     };
                                 });
                                 if (!debt) {
-                                    message.channel.send('You need an valid order ID');
+                                    message.channel.send('You need a valid order ID');
                                 } else {
                                     overall.database.get(`employee_${message.author.id}`).then(employee => {
                                         if (!debtors[employee.username]) {
@@ -480,9 +489,8 @@ class ShopBot {
                     case 'confirm':
                     case 'cleardebt':
                     case 'prepay':
-                        if (!adminBoolean) {
-                            message.reply("You don't have access to that command!");
-                        };
+                    case 'msg':
+                        if (!adminBoolean) message.reply("You don't have access to that command!");
                         break;
                     default:
                         message.channel.send("That's not a command!");

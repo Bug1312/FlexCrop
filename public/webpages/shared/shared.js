@@ -157,26 +157,29 @@ function addJSON(types) {
                     })
                     break;
                 case 'Notifications':
-                    let siteInfo = dataJSON['SiteInfo'],
-                        parent = document.getElementById('messages');
-                    if (siteInfo.warning) {
-                        let warnDiv = document.createElement('div'),
-                            warnMsg = document.createElement('p');
+                    fetch("/fetch-site-data", {
+                        method: "POST"
+                    }).then(response => response.json()).then(siteInfo => {
+                        let parent = document.getElementById('messages');
+                        if (siteInfo.warning) {
+                            let warnDiv = document.createElement('div'),
+                                warnMsg = document.createElement('p');
 
-                        warnMsg.innerHTML = siteInfo.warning;
-                        warnDiv.appendChild(warnMsg);
-                        warnDiv.classList.add('warning');
-                        parent.appendChild(warnDiv)
-                    }
-                    if (siteInfo.message) {
-                        let notifDiv = document.createElement('div'),
-                            notifMsg = document.createElement('p');
+                            warnMsg.innerHTML = siteInfo.warning;
+                            warnDiv.appendChild(warnMsg);
+                            warnDiv.classList.add('warning');
+                            parent.appendChild(warnDiv)
+                        }
+                        if (siteInfo.message) {
+                            let notifDiv = document.createElement('div'),
+                                notifMsg = document.createElement('p');
 
-                        notifMsg.innerHTML = siteInfo.message;
-                        notifDiv.appendChild(notifMsg);
-                        notifDiv.classList.add('notification');
-                        parent.appendChild(notifDiv);
-                    };
+                            notifMsg.innerHTML = siteInfo.message;
+                            notifDiv.appendChild(notifMsg);
+                            notifDiv.classList.add('notification');
+                            parent.appendChild(notifDiv);
+                        };
+                    });
                     break;
                 case 'Supplies':
                     fetch("/fetch-supplies", {
@@ -282,7 +285,7 @@ function addItemToStorage(itemID, amount = 1, stack = 64, rename = "", variant =
     let item = {
             item: itemID,
             name: rename,
-            amount: amount,
+            amount: Math.ceil(amount),
             variant: variant,
             stack: stack
         },

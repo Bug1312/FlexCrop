@@ -654,7 +654,7 @@
         "tags": ["block", "vanilla", "dim"]
     }, {
         "name": "Wart Blocks",
-        "image": "/data/images/items/+16x/warts.gif",
+        "image": "/data/images/items/+16x/warts.apng",
         "variants": [{
             "image": "/data/images/items/+16x/wart_nether.png",
             "variantName": "Nether Wart"
@@ -2483,7 +2483,7 @@
             "suggestions": "926913888367300609",
             "onlineOrders": "926913816938295297",
             "orderLog": "778805165141917726",
-            "botUsage": "778805242841137162",
+            "botUsage": "630438938464485387",
             "announcements": "778804367737618465",
             "leave-join": "778806066820677642",
             "supply": "833065881683886101",
@@ -2508,9 +2508,5 @@
             }
         },
         "prefix": "!"
-    },
-    "SiteInfo": {
-        "warning": "",
-        "message": ""
     }
 }
