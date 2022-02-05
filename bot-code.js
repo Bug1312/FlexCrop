@@ -130,7 +130,7 @@ class ShopBot {
                             if (!args[1] || !overall.database.get(`order_${args[1]}`)) {
                                 message.channel.send('You need a valid order ID to complete an order')
                             } else {
-                                completeOrder(args[1], message.author.id, true);
+                                completeOrder(overall, args[1], message.author.id, true);
                             };
                             break;
                         case 'month':
@@ -319,7 +319,7 @@ class ShopBot {
                         } else {
                             overall.database.get(`order_${args[1]}`).then(order => {
                                 if (order)
-                                    completeOrder(args[1], message.author.id, false, (args[2] && args[2] == 'true') ? true : false);
+                                    completeOrder(overall, args[1], message.author.id, false, (args[2] && args[2] == 'true') ? true : false);
                                 else
                                     message.channel.send('You need a valid order ID to complete an order')
                             })
@@ -522,7 +522,7 @@ class ShopBot {
     }
 }
 
-function completeOrder(orderID, employeeID, remove = false, employeeDebt = false) {
+function completeOrder(overall, orderID, employeeID, remove = false, employeeDebt = false) {
     overall.database.get(`order_${orderID}`).then(order => {
         if (order.location == undefined || order.location == 'undefined')
             bot.channels.cache.get(botJSON['channels']['admin']).send(`${orderID} had an undefined location`);
