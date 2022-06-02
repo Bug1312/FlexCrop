@@ -2459,23 +2459,23 @@
     }],
     "FCS": [{
         "name": "Ink Sac",
-        "image": "/data/images/items/16x/ink_sac.png",
+        "image": "https://flexcrop.net/data/images/items/16x/ink_sac.png",
         "value": 1
     }, {
         "name": "Cobweb",
-        "image": "/data/images/items/16x/cobweb.png",
+        "image": "https://flexcrop.net/data/images/items/16x/cobweb.png",
         "value": 5
     }, {
         "name": "Prismarine Crystals",
-        "image": "/data/images/items/16x/prismarine_crystals.png",
+        "image": "https://flexcrop.net/data/images/items/16x/prismarine_crystals.png",
         "value": 10
     }, {
         "name": "Large Fern",
-        "image": "/data/images/items/16x/large_fern_top+edit.png",
+        "image": "https://flexcrop.net/data/images/items/16x/large_fern_top+edit.png",
         "value": 100
     }, {
         "name": "Tall Grass",
-        "image": "/data/images/items/16x/tall_grass_top+edit.png",
+        "image": "https://flexcrop.net/data/images/items/16x/tall_grass_top+edit.png",
         "value": 100
     }],
     "Bot": {
